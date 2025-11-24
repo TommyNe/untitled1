@@ -10,7 +10,6 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 export const App = () => {
     return (
         <body className="text-stone-500 text-sm not-italic normal-nums font-normal accent-auto bg-fixed bg-white box-border caret-transparent block tracking-[normal] leading-5 list-outside list-disc pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-roboto">
-        <div className="box-border caret-transparent">­</div>
         <title className="box-border caret-transparent hidden">
             ETWAH - Pfarreingemeinschaft
         </title>

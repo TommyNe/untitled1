@@ -1,18 +1,27 @@
-export const CarouselControls = () => {
+type Props = {
+    onPrev: () => void;
+    onNext: () => void;
+};
+
+export const CarouselControls = ({ onPrev, onNext }: Props) => {
     return (
-        <ul className="box-border caret-transparent list-none pl-0">
-        <li className="box-border caret-transparent">
-        <a
-            href="https://etwah.de/"
-    className="absolute text-stone-100 text-3xl bg-black/60 box-border caret-transparent block h-[100px] left-[-100px] leading-[100px] right-[-100px] text-left w-[100px] mb-2.5 pl-[60px] rounded-[100%] top-2/4 font-font_awesome_5_free md:left-[-50px] before:accent-auto before:box-border before:caret-transparent before:text-stone-100 before:text-3xl before:not-italic before:normal-nums before:font-bold before:tracking-[normal] before:leading-[100px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"
-        ></a>
-        </li>
-        <li className="box-border caret-transparent">
-    <a
-        href="https://etwah.de/"
-    className="absolute text-stone-100 text-3xl bg-black/60 box-border caret-transparent block h-[100px] leading-[100px] right-[-100px] text-left w-[100px] mb-2.5 pl-[30px] rounded-[100%] top-2/4 font-font_awesome_5_free md:right-[-50px] before:accent-auto before:box-border before:caret-transparent before:text-stone-100 before:text-3xl before:not-italic before:normal-nums before:font-bold before:tracking-[normal] before:leading-[100px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"
-        ></a>
-        </li>
-        </ul>
-);
+        <div className="pointer-events-none select-none">
+            <button
+                type="button"
+                onClick={onPrev}
+                aria-label="Vorheriges Bild"
+                className="pointer-events-auto absolute text-white text-2xl bg-black/50 hover:bg-black/70 box-border caret-transparent h-12 w-12 flex items-center justify-center rounded-full top-1/2 -translate-y-1/2 left-4 focus:outline-none focus:ring-2 focus:ring-white"
+            >
+                ‹
+            </button>
+            <button
+                type="button"
+                onClick={onNext}
+                aria-label="Nächstes Bild"
+                className="pointer-events-auto absolute text-white text-2xl bg-black/50 hover:bg-black/70 box-border caret-transparent h-12 w-12 flex items-center justify-center rounded-full top-1/2 -translate-y-1/2 right-4 focus:outline-none focus:ring-2 focus:ring-white"
+            >
+                ›
+            </button>
+        </div>
+    );
 };

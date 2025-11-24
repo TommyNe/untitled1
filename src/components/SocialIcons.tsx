@@ -1,4 +1,4 @@
-export const SearchForm = () => {
+export const SocialIcons = () => {
     return (
         <form role="search" className="box-border caret-transparent">
             <div className="box-border caret-transparent mt-2.5 mb-[30px]">
