@@ -6,7 +6,6 @@ export const Header = () => {
         <header className=" box-border caret-transparent w-full absolute">
                 <HeaderTop />
                 <Navigation />
-
         </header>
     );
 };

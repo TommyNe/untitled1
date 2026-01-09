@@ -3,9 +3,9 @@ import { CarouselIndicators } from "@/sections/Carousel/components/CarouselIndic
 import { CarouselControls } from "@/sections/Carousel/components/CarouselControls";
 
 const SLIDES = [
-    "https://etwah.de/galerie/488dc394b62f57f1319b4a2d8a317dec86e27e8e.jpg",
-    "https://etwah.de/galerie/4b7e09dfe7c3af945aab67f427dddae2627d4a00.jpg",
-    "https://etwah.de/galerie/468102d83de8671aeae6bf81968fef65e5c78ef4.jpg",
+    "https://etwah.de/galerie/0bdf999489bb96b2428ae5e43fa862950cf2d98f.jpg",
+    "https://etwah.de/galerie/ee09954091e0b05d26e58273112287ed4727eb61.jpg",
+    "https://etwah.de/galerie/e954f549c0ee780bda1a02064d4a04b6591ded2a.jpg",
 ];
 
 export const Carousel = () => {

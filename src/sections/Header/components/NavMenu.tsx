@@ -1,20 +1,37 @@
+import type React from "react";
+
 type NavMenuProps = {
     isOpen?: (id: string) => boolean;
     toggle?: (id: string) => void;
     closeAll?: () => void;
+    mobile?: boolean;
+    onItemClick?: () => void;
 };
 
-export const NavMenu = ({ isOpen, toggle, closeAll }: NavMenuProps) => {
+export const NavMenu = ({ isOpen, toggle, mobile, onItemClick }: NavMenuProps) => {
+    const handleClick: React.MouseEventHandler<HTMLUListElement> = (e) => {
+        if (!mobile) return;
+        const target = e.target as HTMLElement;
+        const anchor = target.closest ? (target.closest('a') as HTMLAnchorElement | null) : null;
+        if (anchor) {
+            onItemClick?.();
+        }
+    };
     return (
-        <ul className="box-border caret-transparent list-none px-[21px]">
+        <ul
+            onClick={handleClick}
+            className={[
+                "box-border caret-transparent list-none px-[21px]",
+                mobile ? "flex flex-col md:hidden" : "hidden md:flex",
+            ].join(" ")}
+        >
             <li className="relative text-base box-border caret-transparent block leading-[normal] text-left uppercase w-full md:inline-block md:leading-[50px] md:text-center md:w-auto group">
                 <div className="flex items-center">
                     <a
                         href="https://etwah.de/"
-                        className="text-zinc-600 border-b-stone-200 border-l-zinc-600 border-r-zinc-600 border-t-zinc-600 box-border caret-transparent block leading-[normal] text-left px-[25px] py-5 border-b md:border-b-zinc-600 md:leading-[50px] md:text-center md:px-6 md:py-0 md:border-b-0 hover:text-teal-700 hover:border-b-teal-700 hover:border-l-teal-700 hover:border-r-teal-700 hover:border-t-teal-700"
+                        className="text-zinc-600 border-b-stone-200 border-l-zinc-600 border-r-zinc-600 border-t-zinc-600 box-border caret-transparent block leading-[normal] text-left py-5 border-b md:border-b-zinc-600 md:leading-[50px] md:text-center md:py-0 md:border-b-0 hover:text-teal-700 hover:border-b-teal-700 hover:border-l-teal-700 hover:border-r-teal-700 hover:border-t-teal-700"
                     >
-                        Home{" "}
-                        <i className="text-[13px] font-black box-border caret-transparent inline-block leading-[13px] text-left font-font_awesome_5_free md:text-center before:accent-auto before:box-border before:caret-transparent before:text-zinc-600 before:text-[13px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[13px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:uppercase before:visible before:border-separate before:font-font_awesome_5_free before:md:text-center"></i>
+                        Home
                     </a>
                     <button
                         type="button"
@@ -22,7 +39,7 @@ export const NavMenu = ({ isOpen, toggle, closeAll }: NavMenuProps) => {
                         aria-controls="submenu-home"
                         aria-expanded={!!isOpen?.("home")}
                         onClick={(e) => { e.preventDefault(); toggle?.("home"); }}
-                        className="ml-1 inline-flex h-6 w-6 items-center justify-center rounded hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-teal-500 md:hidden"
+                        className="ml-1 inline-flex h-6 w-6 items-center justify-center rounded hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-teal-500"
                         title="Untermenü umschalten"
                     >
                         ▾
@@ -32,9 +49,8 @@ export const NavMenu = ({ isOpen, toggle, closeAll }: NavMenuProps) => {
                     id="submenu-home"
                     className={[
                         "transition-all duration-200 ease-out",
-                        "grid overflow-hidden",
-                        isOpen?.("home") ? "grid-rows-[1fr] opacity-100 translate-y-0" : "grid-rows-[0fr] opacity-0 -translate-y-1",
-                        "md:absolute md:left-0 md:top-[60px] md:min-w-full md:shadow-[rgba(0,0,0,0.2)_0px_2px_2px_0px] md:rounded-bl md:rounded-br md:rounded-tl md:rounded-tr md:z-[999] md:bg-white",
+                        "grid",
+                        "md:absolute md:left-0 md:top-[60px] md:min-w-full md:shadow-[rgba(0,0,0,0.2)_0px_2px_2px_0px] md:rounded-bl md:rounded-br md:rounded-tl md:rounded-tr md:z-[999] m-3 md:bg-white",
                         "md:opacity-0 md:translate-y-1 md:invisible",
                         "md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0",
                         "md:focus-within:visible md:focus-within:opacity-100 md:focus-within:translate-y-0",
@@ -42,11 +58,11 @@ export const NavMenu = ({ isOpen, toggle, closeAll }: NavMenuProps) => {
                         "box-border caret-transparent leading-[normal] min-w-full text-left z-[999] ml-0 pl-0 rounded-none border-b left-0 top-0"
                     ].join(" ")}
                 >
-                    <div className="overflow-hidden">
+                    <div>
                         <li className="relative text-sm box-border caret-transparent block leading-[normal] text-left w-full md:text-center md:w-auto">
                             <a
                                 href="https://etwah.de/#aktuelles"
-                                className="text-zinc-600 border-b-stone-100 border-l-zinc-600 border-r-zinc-600 border-t-zinc-600 box-border caret-transparent block text-left text-nowrap px-5 py-2.5 border-b md:text-center hover:text-teal-700 hover:border-l-teal-700 hover:border-r-teal-700 hover:border-t-teal-700"
+                                className="text-zinc-600 border-b-stone-100 border-l-zinc-600 border-r-zinc-600 border-t-zinc-600 box-border caret-transparent block text-left text-nowrap py-2.5 border-b md:text-center hover:text-teal-700 hover:border-l-teal-700 hover:border-r-teal-700 hover:border-t-teal-700 px-2"
                             >
                                 Aktuelles
                             </a>
@@ -54,7 +70,7 @@ export const NavMenu = ({ isOpen, toggle, closeAll }: NavMenuProps) => {
                         <li className="relative text-sm box-border caret-transparent block leading-[normal] text-left w-full md:text-center md:w-auto">
                             <a
                                 href="https://etwah.de/archive"
-                                className="text-zinc-600 box-border caret-transparent block text-left text-nowrap px-5 py-2.5 md:text-center hover:text-teal-700 hover:border-teal-700"
+                                className="text-zinc-600 box-border caret-transparent block text-left text-nowrap py-2.5 md:text-center hover:text-teal-700 hover:border-teal-700"
                             >
                                 Archive
                             </a>
@@ -83,8 +99,20 @@ export const NavMenu = ({ isOpen, toggle, closeAll }: NavMenuProps) => {
                         ▾
                     </button>
                 </div>
-                <ul id="submenu-about" className="transition-all duration-200 ease-out grid overflow-hidden md:absolute md:left-0 md:top-[60px] md:min-w-full md:shadow-[rgba(0,0,0,0.2)_0px_2px_2px_0px] md:rounded-bl md:rounded-br md:rounded-tl md:rounded-tr md:z-[999] md:bg-white md:opacity-0 md:translate-y-1 md:invisible md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0 md:focus-within:visible md:focus-within:opacity-100 md:focus-within:translate-y-0 md:grid-rows-[1fr] md:overflow-visible box-border caret-transparent leading-[normal] min-w-full text-left z-[999] ml-0 pl-0 rounded-none border-b left-0 top-0">
-                    <div className={[isOpen?.("about") ? "grid-rows-[1fr] opacity-100 translate-y-0" : "grid-rows-[0fr] opacity-0 -translate-y-1","overflow-hidden"].join(" ")}>
+                <ul
+                    id="submenu-about"
+                    className={[
+                        "transition-all duration-200 ease-out",
+                        "grid",
+                        isOpen?.("about") ? "grid-rows-[1fr] opacity-100 translate-y-0" : "grid-rows-[0fr] opacity-0 -translate-y-1",
+                        "md:absolute md:left-0 md:top-[60px] md:min-w-full md:shadow-[rgba(0,0,0,0.2)_0px_2px_2px_0px] md:rounded-bl md:rounded-br md:rounded-tl md:rounded-tr md:z-[999] md:bg-white",
+                        "md:opacity-0 md:translate-y-1 md:invisible",
+                        "md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0",
+                        "md:focus-within:visible md:focus-within:opacity-100 md:focus-within:translate-y-0",
+                        "md:grid-rows-[1fr] md:overflow-visible",
+                        "box-border caret-transparent leading-[normal] w-auto text-left z-[999] ml-0 pl-0 rounded-none border-b left-0 top-0"
+                    ].join(" ")}>
+                    <div>
                     <li className="relative text-sm box-border caret-transparent block leading-[normal] text-left w-full md:text-center md:w-auto">
                         <a
                             href="https://etwah.de/about/koop"

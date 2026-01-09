@@ -1,10 +1,42 @@
-export const MobileMenuToggle = () => {
+type MobileMenuToggleProps = {
+    open: boolean;
+    onToggle: () => void;
+};
+
+export const MobileMenuToggle = ({ open, onToggle }: MobileMenuToggleProps) => {
     return (
-        <a
-            href="https://etwah.de/"
-            className="absolute text-zinc-600 text-lg box-border caret-transparent block mt-[-52px] underline z-[9999] right-[15px] md:hidden md:-mt-2 hover:text-teal-700 hover:no-underline hover:border-teal-700"
+        <button
+            type="button"
+            aria-controls="mobile-menu"
+            aria-expanded={open}
+            onClick={onToggle}
+            className="absolute text-zinc-600 text-xl box-border caret-transparent block mt-[-52px] z-[9999] right-[1px] md:hidden md:-mt-2 hover:text-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            title={open ? "Menü schließen" : "Menü öffnen"}
         >
-            <i className="font-black box-border caret-transparent inline-block leading-[18px] font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-zinc-600 before:text-lg before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[18px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-        </a>
+            <span className="sr-only">{open ? "Menü schließen" : "Menü öffnen"}</span>
+            {/* Icon: simple hamburger / close */}
+            <svg
+                className="h-7 w-7"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {open ? (
+                    <>
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </>
+                ) : (
+                    <>
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </>
+                )}
+            </svg>
+        </button>
     );
 };
