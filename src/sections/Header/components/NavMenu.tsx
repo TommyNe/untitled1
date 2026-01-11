@@ -17,6 +17,75 @@ export const NavMenu = ({ isOpen, toggle, mobile, onItemClick }: NavMenuProps) =
             onItemClick?.();
         }
     };
+
+    const homeSubMenuItems = [
+        { label: 'Aktuelles', link: '/#aktuelles' },
+        { label: 'Archive', link: '/archive' },
+    ];
+
+    const aboutSubMenuItems = [
+        { label: 'Kooperationsrat', link: '/about/koop' },
+        { label: 'Liturgische Dienste', link: '/about/lit' },
+        { label: 'Pastoralteam', link: '/team' },
+        { label: 'Pfarreingemeinschaft', link: '/about/gem' }
+    ];
+
+    const subItemsEmmeln = [
+        { label: 'Unsere Kirche', link: '/emmeln/kirche' },
+        { label: 'Pfarrbüro', link: '/emmeln/pburo' },
+        { label: 'Pfarrheim', link: '/emmeln/pfarrheim' },
+        { label: 'Kindertagesstätte', link: '/kita/emmeln/home' },
+        { label: 'Bücherei', link: '/emmeln/bucherei' },
+        { label: 'Gremien', link: '/emmeln/kv' },
+        { label: 'Vereine/Verbände/Gruppen', link: '/emmeln/kolping' },
+        { label: 'Kinder u. Familien', link: '/emmeln/kinder/ek' },
+        { label: 'Jugend', link: '/emmeln/jugend/firmung' }
+    ];
+
+    const communitySubItems = [
+        { label: 'St. Josef Emmeln', link: '/emmeln', subItems: subItemsEmmeln },
+        { label: 'St. Marien Tinnen', link: '/tinnen' },
+        { label: 'St. Clemens Wesuwe', link: '/wesuwe' },
+        { label: 'Herz-Jesu Altharen', link: '/altharen' },
+        { label: 'St. Martinus Haren', link: '/haren' }
+
+        ];
+
+    const faithSubMenuItems = [
+        { label: 'Subitem 1', link: '/hope/subitem1' },
+        { label: 'Subitem 2', link: '/hope/subitem2' },
+    ];
+
+    const menuItems = [
+        {
+            key: 'home',
+            label: 'Home',
+            route: '/',
+            id: 'submenu-home',
+            subMenuItems: homeSubMenuItems
+        },
+        {
+            key: 'about',
+            route: '/about',
+            id: 'submenu-about',
+            subMenuItems: aboutSubMenuItems
+        },
+        {
+            key: 'communities',
+            route: '/communities',
+            id: 'submenu-communities',
+            subMenuItems: communitySubItems
+        },
+        {
+            key: 'faith',
+            route: '/faith',
+            id: 'submenu-faith',
+            subMenuItems: faithSubMenuItems
+        }
+    ];
+
+
+
     return (
         <ul
             onClick={handleClick}
@@ -93,7 +162,7 @@ export const NavMenu = ({ isOpen, toggle, mobile, onItemClick }: NavMenuProps) =
                         aria-controls="submenu-about"
                         aria-expanded={!!isOpen?.("about")}
                         onClick={(e) => { e.preventDefault(); toggle?.("about"); }}
-                        className="ml-1 inline-flex h-6 w-6 items-center justify-center rounded hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-teal-500 md:hidden"
+                        className="ml-1 inline-flex h-6 w-6 items-center justify-center rounded hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-teal-500"
                         title="Untermenü umschalten"
                     >
                         ▾
@@ -156,6 +225,17 @@ export const NavMenu = ({ isOpen, toggle, mobile, onItemClick }: NavMenuProps) =
                     Unsere Gemeinden{" "}
                     <i className="text-[13px] font-black box-border caret-transparent inline-block leading-[13px] text-left font-font_awesome_5_free md:text-center before:accent-auto before:box-border before:caret-transparent before:text-zinc-600 before:text-[13px] before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-[13px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:uppercase before:visible before:border-separate before:font-font_awesome_5_free before:md:text-center"></i>
                 </a>
+                <button
+                    type="button"
+                    aria-haspopup="menu"
+                    aria-controls="submenu-communities"
+                    aria-expanded={!!isOpen?.("communities")}
+                    onClick={(e) => { e.preventDefault(); toggle?.(""); }}
+                    className="ml-1 inline-flex h-6 w-6 items-center justify-center rounded hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    title="Untermenü umschalten"
+                >
+                    ▾
+                </button>
                 <ul className="static bg-white border-b-stone-200 border-l-stone-500 border-r-stone-500 border-t-stone-500 shadow-none box-border caret-transparent hidden leading-[normal] min-w-full text-left z-[999] ml-0 pl-0 rounded-none border-b -left-6 top-0 md:absolute md:border-b-stone-500 md:shadow-[rgba(0,0,0,0.2)_0px_2px_2px_0px] md:leading-[50px] md:text-center md:ml-[30px] md:rounded-bl md:rounded-br md:rounded-tl md:rounded-tr md:border-b-0 md:top-[60px] before:accent-auto before:box-border before:caret-transparent before:text-stone-500 before:hidden before:text-base before:not-italic before:normal-nums before:font-normal before:h-0 before:tracking-[normal] before:leading-[normal] before:list-outside before:list-none before:pointer-events-none before:absolute before:text-left before:indent-[0px] before:uppercase before:visible before:w-0 before:-ml-2.5 before:-mt-2.5 before:border-t-transparent before:border-b-white before:border-x-transparent before:border-separate before:border-[5px] before:border-solid before:left-2/4 before:font-roboto_condensed before:md:block before:md:leading-[50px] before:md:text-center">
                     <li className="relative text-sm box-border caret-transparent block leading-[normal] text-left w-full md:text-center md:w-auto">
                         <a
