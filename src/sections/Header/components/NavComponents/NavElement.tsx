@@ -1,10 +1,10 @@
 import {Link} from "@tanstack/react-router";
 
 interface Props {
-    label: string;
+    label?: string;
     key: string;
-    isOpen: (key: string) => boolean;
-    toggle: (key: string) => void;
+    isOpen?: (key: string) => boolean;
+    toggle?: (key: string) => void;
     route: string;
     id?: string;
     subMenuItems?: Array<{
@@ -13,11 +13,17 @@ interface Props {
         subItems?: Array<{
             label: string;
             link: string;
+            subItems?: Array<{
+                label: string;
+                link: string;
+            }>;
         }>;
     }>;
 }
 
+
 export default function NavElement({ key, isOpen, toggle, route, id, subMenuItems, label }: Props) {
+    console.log('dd', subMenuItems)
     return (
         <li className="relative text-base box-border caret-transparent block leading-[normal] text-left uppercase w-full md:inline-block md:leading-[50px] md:text-center md:w-auto group">
             <div className="flex items-center">
@@ -71,6 +77,20 @@ export default function NavElement({ key, isOpen, toggle, route, id, subMenuItem
                                         >
                                             {subItem.label}
                                         </Link>
+                                        {item.subItems && (
+                                            <ul className="pl-4">
+                                                {item.subItems.map((subItem) => (
+                                                    <li key={subItem.link} className="text-sm">
+                                                        <Link
+                                                            to={subItem.link}
+                                                            className="text-zinc-600 block py-2.5 hover:text-teal-700"
+                                                        >
+                                                            {subItem.label}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
                                     </li>
                                 ))}
                             </ul>

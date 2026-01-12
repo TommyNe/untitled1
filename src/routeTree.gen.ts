@@ -9,10 +9,32 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TeamRouteImport } from './routes/team'
 import { Route as ArchiveRouteImport } from './routes/archive'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as AboutKoopRouteImport } from './routes/about/koop'
+import { Route as FaithIndexRouteImport } from './routes/faith/index'
+import { Route as CommunitiesIndexRouteImport } from './routes/communities/index'
+import { Route as AboutIndexRouteImport } from './routes/about/index'
+import { Route as FaithNameRouteImport } from './routes/faith/$name'
+import { Route as AboutNameRouteImport } from './routes/about/$name'
+import { Route as FaithProjektIndexRouteImport } from './routes/faith/projekt/index'
+import { Route as CommunitiesWesuweIndexRouteImport } from './routes/communities/wesuwe/index'
+import { Route as CommunitiesTinnenIndexRouteImport } from './routes/communities/tinnen/index'
+import { Route as CommunitiesHarenIndexRouteImport } from './routes/communities/haren/index'
+import { Route as CommunitiesEmmelnIndexRouteImport } from './routes/communities/emmeln/index'
+import { Route as CommunitiesAltharenIndexRouteImport } from './routes/communities/altharen/index'
+import { Route as FaithProjektNameRouteImport } from './routes/faith/projekt/$name'
+import { Route as CommunitiesWesuweNameRouteImport } from './routes/communities/wesuwe/$name'
+import { Route as CommunitiesTinnenNameRouteImport } from './routes/communities/tinnen/$name'
+import { Route as CommunitiesHarenNameRouteImport } from './routes/communities/haren/$name'
+import { Route as CommunitiesEmmelnNameRouteImport } from './routes/communities/emmeln/$name'
+import { Route as CommunitiesAltharenNameRouteImport } from './routes/communities/altharen/$name'
 
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArchiveRoute = ArchiveRouteImport.update({
   id: '/archive',
   path: '/archive',
@@ -23,44 +45,261 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AboutKoopRoute = AboutKoopRouteImport.update({
-  id: '/about/koop',
-  path: '/about/koop',
+const FaithIndexRoute = FaithIndexRouteImport.update({
+  id: '/faith/',
+  path: '/faith/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesIndexRoute = CommunitiesIndexRouteImport.update({
+  id: '/communities/',
+  path: '/communities/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutIndexRoute = AboutIndexRouteImport.update({
+  id: '/about/',
+  path: '/about/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaithNameRoute = FaithNameRouteImport.update({
+  id: '/faith/$name',
+  path: '/faith/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutNameRoute = AboutNameRouteImport.update({
+  id: '/about/$name',
+  path: '/about/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaithProjektIndexRoute = FaithProjektIndexRouteImport.update({
+  id: '/faith/projekt/',
+  path: '/faith/projekt/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesWesuweIndexRoute = CommunitiesWesuweIndexRouteImport.update({
+  id: '/communities/wesuwe/',
+  path: '/communities/wesuwe/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesTinnenIndexRoute = CommunitiesTinnenIndexRouteImport.update({
+  id: '/communities/tinnen/',
+  path: '/communities/tinnen/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesHarenIndexRoute = CommunitiesHarenIndexRouteImport.update({
+  id: '/communities/haren/',
+  path: '/communities/haren/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesEmmelnIndexRoute = CommunitiesEmmelnIndexRouteImport.update({
+  id: '/communities/emmeln/',
+  path: '/communities/emmeln/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesAltharenIndexRoute =
+  CommunitiesAltharenIndexRouteImport.update({
+    id: '/communities/altharen/',
+    path: '/communities/altharen/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FaithProjektNameRoute = FaithProjektNameRouteImport.update({
+  id: '/faith/projekt/$name',
+  path: '/faith/projekt/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesWesuweNameRoute = CommunitiesWesuweNameRouteImport.update({
+  id: '/communities/wesuwe/$name',
+  path: '/communities/wesuwe/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesTinnenNameRoute = CommunitiesTinnenNameRouteImport.update({
+  id: '/communities/tinnen/$name',
+  path: '/communities/tinnen/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesHarenNameRoute = CommunitiesHarenNameRouteImport.update({
+  id: '/communities/haren/$name',
+  path: '/communities/haren/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesEmmelnNameRoute = CommunitiesEmmelnNameRouteImport.update({
+  id: '/communities/emmeln/$name',
+  path: '/communities/emmeln/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunitiesAltharenNameRoute = CommunitiesAltharenNameRouteImport.update({
+  id: '/communities/altharen/$name',
+  path: '/communities/altharen/$name',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/archive': typeof ArchiveRoute
-  '/about/koop': typeof AboutKoopRoute
+  '/team': typeof TeamRoute
+  '/about/$name': typeof AboutNameRoute
+  '/faith/$name': typeof FaithNameRoute
+  '/about': typeof AboutIndexRoute
+  '/communities': typeof CommunitiesIndexRoute
+  '/faith': typeof FaithIndexRoute
+  '/communities/altharen/$name': typeof CommunitiesAltharenNameRoute
+  '/communities/emmeln/$name': typeof CommunitiesEmmelnNameRoute
+  '/communities/haren/$name': typeof CommunitiesHarenNameRoute
+  '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
+  '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
+  '/faith/projekt/$name': typeof FaithProjektNameRoute
+  '/communities/altharen': typeof CommunitiesAltharenIndexRoute
+  '/communities/emmeln': typeof CommunitiesEmmelnIndexRoute
+  '/communities/haren': typeof CommunitiesHarenIndexRoute
+  '/communities/tinnen': typeof CommunitiesTinnenIndexRoute
+  '/communities/wesuwe': typeof CommunitiesWesuweIndexRoute
+  '/faith/projekt': typeof FaithProjektIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/archive': typeof ArchiveRoute
-  '/about/koop': typeof AboutKoopRoute
+  '/team': typeof TeamRoute
+  '/about/$name': typeof AboutNameRoute
+  '/faith/$name': typeof FaithNameRoute
+  '/about': typeof AboutIndexRoute
+  '/communities': typeof CommunitiesIndexRoute
+  '/faith': typeof FaithIndexRoute
+  '/communities/altharen/$name': typeof CommunitiesAltharenNameRoute
+  '/communities/emmeln/$name': typeof CommunitiesEmmelnNameRoute
+  '/communities/haren/$name': typeof CommunitiesHarenNameRoute
+  '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
+  '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
+  '/faith/projekt/$name': typeof FaithProjektNameRoute
+  '/communities/altharen': typeof CommunitiesAltharenIndexRoute
+  '/communities/emmeln': typeof CommunitiesEmmelnIndexRoute
+  '/communities/haren': typeof CommunitiesHarenIndexRoute
+  '/communities/tinnen': typeof CommunitiesTinnenIndexRoute
+  '/communities/wesuwe': typeof CommunitiesWesuweIndexRoute
+  '/faith/projekt': typeof FaithProjektIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/archive': typeof ArchiveRoute
-  '/about/koop': typeof AboutKoopRoute
+  '/team': typeof TeamRoute
+  '/about/$name': typeof AboutNameRoute
+  '/faith/$name': typeof FaithNameRoute
+  '/about/': typeof AboutIndexRoute
+  '/communities/': typeof CommunitiesIndexRoute
+  '/faith/': typeof FaithIndexRoute
+  '/communities/altharen/$name': typeof CommunitiesAltharenNameRoute
+  '/communities/emmeln/$name': typeof CommunitiesEmmelnNameRoute
+  '/communities/haren/$name': typeof CommunitiesHarenNameRoute
+  '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
+  '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
+  '/faith/projekt/$name': typeof FaithProjektNameRoute
+  '/communities/altharen/': typeof CommunitiesAltharenIndexRoute
+  '/communities/emmeln/': typeof CommunitiesEmmelnIndexRoute
+  '/communities/haren/': typeof CommunitiesHarenIndexRoute
+  '/communities/tinnen/': typeof CommunitiesTinnenIndexRoute
+  '/communities/wesuwe/': typeof CommunitiesWesuweIndexRoute
+  '/faith/projekt/': typeof FaithProjektIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/archive' | '/about/koop'
+  fullPaths:
+    | '/'
+    | '/archive'
+    | '/team'
+    | '/about/$name'
+    | '/faith/$name'
+    | '/about'
+    | '/communities'
+    | '/faith'
+    | '/communities/altharen/$name'
+    | '/communities/emmeln/$name'
+    | '/communities/haren/$name'
+    | '/communities/tinnen/$name'
+    | '/communities/wesuwe/$name'
+    | '/faith/projekt/$name'
+    | '/communities/altharen'
+    | '/communities/emmeln'
+    | '/communities/haren'
+    | '/communities/tinnen'
+    | '/communities/wesuwe'
+    | '/faith/projekt'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/archive' | '/about/koop'
-  id: '__root__' | '/' | '/archive' | '/about/koop'
+  to:
+    | '/'
+    | '/archive'
+    | '/team'
+    | '/about/$name'
+    | '/faith/$name'
+    | '/about'
+    | '/communities'
+    | '/faith'
+    | '/communities/altharen/$name'
+    | '/communities/emmeln/$name'
+    | '/communities/haren/$name'
+    | '/communities/tinnen/$name'
+    | '/communities/wesuwe/$name'
+    | '/faith/projekt/$name'
+    | '/communities/altharen'
+    | '/communities/emmeln'
+    | '/communities/haren'
+    | '/communities/tinnen'
+    | '/communities/wesuwe'
+    | '/faith/projekt'
+  id:
+    | '__root__'
+    | '/'
+    | '/archive'
+    | '/team'
+    | '/about/$name'
+    | '/faith/$name'
+    | '/about/'
+    | '/communities/'
+    | '/faith/'
+    | '/communities/altharen/$name'
+    | '/communities/emmeln/$name'
+    | '/communities/haren/$name'
+    | '/communities/tinnen/$name'
+    | '/communities/wesuwe/$name'
+    | '/faith/projekt/$name'
+    | '/communities/altharen/'
+    | '/communities/emmeln/'
+    | '/communities/haren/'
+    | '/communities/tinnen/'
+    | '/communities/wesuwe/'
+    | '/faith/projekt/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArchiveRoute: typeof ArchiveRoute
-  AboutKoopRoute: typeof AboutKoopRoute
+  TeamRoute: typeof TeamRoute
+  AboutNameRoute: typeof AboutNameRoute
+  FaithNameRoute: typeof FaithNameRoute
+  AboutIndexRoute: typeof AboutIndexRoute
+  CommunitiesIndexRoute: typeof CommunitiesIndexRoute
+  FaithIndexRoute: typeof FaithIndexRoute
+  CommunitiesAltharenNameRoute: typeof CommunitiesAltharenNameRoute
+  CommunitiesEmmelnNameRoute: typeof CommunitiesEmmelnNameRoute
+  CommunitiesHarenNameRoute: typeof CommunitiesHarenNameRoute
+  CommunitiesTinnenNameRoute: typeof CommunitiesTinnenNameRoute
+  CommunitiesWesuweNameRoute: typeof CommunitiesWesuweNameRoute
+  FaithProjektNameRoute: typeof FaithProjektNameRoute
+  CommunitiesAltharenIndexRoute: typeof CommunitiesAltharenIndexRoute
+  CommunitiesEmmelnIndexRoute: typeof CommunitiesEmmelnIndexRoute
+  CommunitiesHarenIndexRoute: typeof CommunitiesHarenIndexRoute
+  CommunitiesTinnenIndexRoute: typeof CommunitiesTinnenIndexRoute
+  CommunitiesWesuweIndexRoute: typeof CommunitiesWesuweIndexRoute
+  FaithProjektIndexRoute: typeof FaithProjektIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/archive': {
       id: '/archive'
       path: '/archive'
@@ -75,11 +314,123 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about/koop': {
-      id: '/about/koop'
-      path: '/about/koop'
-      fullPath: '/about/koop'
-      preLoaderRoute: typeof AboutKoopRouteImport
+    '/faith/': {
+      id: '/faith/'
+      path: '/faith'
+      fullPath: '/faith'
+      preLoaderRoute: typeof FaithIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/': {
+      id: '/communities/'
+      path: '/communities'
+      fullPath: '/communities'
+      preLoaderRoute: typeof CommunitiesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about/': {
+      id: '/about/'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faith/$name': {
+      id: '/faith/$name'
+      path: '/faith/$name'
+      fullPath: '/faith/$name'
+      preLoaderRoute: typeof FaithNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about/$name': {
+      id: '/about/$name'
+      path: '/about/$name'
+      fullPath: '/about/$name'
+      preLoaderRoute: typeof AboutNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faith/projekt/': {
+      id: '/faith/projekt/'
+      path: '/faith/projekt'
+      fullPath: '/faith/projekt'
+      preLoaderRoute: typeof FaithProjektIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/wesuwe/': {
+      id: '/communities/wesuwe/'
+      path: '/communities/wesuwe'
+      fullPath: '/communities/wesuwe'
+      preLoaderRoute: typeof CommunitiesWesuweIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/tinnen/': {
+      id: '/communities/tinnen/'
+      path: '/communities/tinnen'
+      fullPath: '/communities/tinnen'
+      preLoaderRoute: typeof CommunitiesTinnenIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/haren/': {
+      id: '/communities/haren/'
+      path: '/communities/haren'
+      fullPath: '/communities/haren'
+      preLoaderRoute: typeof CommunitiesHarenIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/emmeln/': {
+      id: '/communities/emmeln/'
+      path: '/communities/emmeln'
+      fullPath: '/communities/emmeln'
+      preLoaderRoute: typeof CommunitiesEmmelnIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/altharen/': {
+      id: '/communities/altharen/'
+      path: '/communities/altharen'
+      fullPath: '/communities/altharen'
+      preLoaderRoute: typeof CommunitiesAltharenIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faith/projekt/$name': {
+      id: '/faith/projekt/$name'
+      path: '/faith/projekt/$name'
+      fullPath: '/faith/projekt/$name'
+      preLoaderRoute: typeof FaithProjektNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/wesuwe/$name': {
+      id: '/communities/wesuwe/$name'
+      path: '/communities/wesuwe/$name'
+      fullPath: '/communities/wesuwe/$name'
+      preLoaderRoute: typeof CommunitiesWesuweNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/tinnen/$name': {
+      id: '/communities/tinnen/$name'
+      path: '/communities/tinnen/$name'
+      fullPath: '/communities/tinnen/$name'
+      preLoaderRoute: typeof CommunitiesTinnenNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/haren/$name': {
+      id: '/communities/haren/$name'
+      path: '/communities/haren/$name'
+      fullPath: '/communities/haren/$name'
+      preLoaderRoute: typeof CommunitiesHarenNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/emmeln/$name': {
+      id: '/communities/emmeln/$name'
+      path: '/communities/emmeln/$name'
+      fullPath: '/communities/emmeln/$name'
+      preLoaderRoute: typeof CommunitiesEmmelnNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/communities/altharen/$name': {
+      id: '/communities/altharen/$name'
+      path: '/communities/altharen/$name'
+      fullPath: '/communities/altharen/$name'
+      preLoaderRoute: typeof CommunitiesAltharenNameRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -88,7 +439,24 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchiveRoute: ArchiveRoute,
-  AboutKoopRoute: AboutKoopRoute,
+  TeamRoute: TeamRoute,
+  AboutNameRoute: AboutNameRoute,
+  FaithNameRoute: FaithNameRoute,
+  AboutIndexRoute: AboutIndexRoute,
+  CommunitiesIndexRoute: CommunitiesIndexRoute,
+  FaithIndexRoute: FaithIndexRoute,
+  CommunitiesAltharenNameRoute: CommunitiesAltharenNameRoute,
+  CommunitiesEmmelnNameRoute: CommunitiesEmmelnNameRoute,
+  CommunitiesHarenNameRoute: CommunitiesHarenNameRoute,
+  CommunitiesTinnenNameRoute: CommunitiesTinnenNameRoute,
+  CommunitiesWesuweNameRoute: CommunitiesWesuweNameRoute,
+  FaithProjektNameRoute: FaithProjektNameRoute,
+  CommunitiesAltharenIndexRoute: CommunitiesAltharenIndexRoute,
+  CommunitiesEmmelnIndexRoute: CommunitiesEmmelnIndexRoute,
+  CommunitiesHarenIndexRoute: CommunitiesHarenIndexRoute,
+  CommunitiesTinnenIndexRoute: CommunitiesTinnenIndexRoute,
+  CommunitiesWesuweIndexRoute: CommunitiesWesuweIndexRoute,
+  FaithProjektIndexRoute: FaithProjektIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
