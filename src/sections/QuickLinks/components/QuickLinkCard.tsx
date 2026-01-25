@@ -1,10 +1,10 @@
 export type QuickLinkCardProps = {
-    href: string;
-    imageUrl: string;
-    imageAlt: string;
-    title: string;
-    linkText: string;
-};
+    href: string
+    imageUrl: string
+    imageAlt: string
+    title: string
+    linkText: string
+}
 
 export const QuickLinkCard = (props: QuickLinkCardProps) => {
     return (
@@ -22,9 +22,9 @@ export const QuickLinkCard = (props: QuickLinkCardProps) => {
                     {props.title}
                 </strong>
                 <span className="absolute text-zinc-800 bg-white box-border caret-transparent block z-[9] pl-[30px] pr-5 py-[5px] left-2.5 bottom-[30px]">
-          {props.linkText}
-        </span>
+                    {props.linkText}
+                </span>
             </a>
         </div>
-    );
-};
+    )
+}

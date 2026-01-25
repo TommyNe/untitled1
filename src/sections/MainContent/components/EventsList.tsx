@@ -1,4 +1,4 @@
-import { EventItem } from "@/sections/MainContent/components/EventItem";
+import { EventItem } from '@/sections/MainContent/components/EventItem'
 
 export const EventsList = () => {
     return (
@@ -84,12 +84,12 @@ export const EventsList = () => {
                                             </a>
                                         </h2>
                                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                      <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                      30.08.2025, Tinnen{" "}
-                    </span>
+                                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                            30.08.2025, Tinnen{' '}
+                                        </span>
                                     </div>
                                     <p className="text-base box-border caret-transparent mb-[15px]">
-                                        Herzliche Einladung!{" "}
+                                        Herzliche Einladung!{' '}
                                         <a
                                             href="https://etwah.de/post/details/932"
                                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -127,12 +127,12 @@ export const EventsList = () => {
                                             </a>
                                         </h2>
                                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                      <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                      01.10.2025, Emmeln{" "}
-                    </span>
+                                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                            01.10.2025, Emmeln{' '}
+                                        </span>
                                     </div>
                                     <p className="text-base box-border caret-transparent mb-[15px]">
-                                        Herzliche Einladung! Weitere Hinweise im Post!{" "}
+                                        Herzliche Einladung! Weitere Hinweise im Post!{' '}
                                         <a
                                             href="https://etwah.de/post/details/965"
                                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -164,17 +164,18 @@ export const EventsList = () => {
                                                 href="https://etwah.de/post/details/980"
                                                 className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                             >
-                                                Fr., 31.10.2025, 16 Uhr Laternenlaufen in Landegge - AN
-                                                DER BAUMBANK SANDE BZW. AN DEN VERABREDETEN TREFFPUNKTEN
+                                                Fr., 31.10.2025, 16 Uhr Laternenlaufen in Landegge -
+                                                AN DER BAUMBANK SANDE BZW. AN DEN VERABREDETEN
+                                                TREFFPUNKTEN
                                             </a>
                                         </h2>
                                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                      <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                      21.10.2025, Haren{" "}
-                    </span>
+                                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                            21.10.2025, Haren{' '}
+                                        </span>
                                     </div>
                                     <p className="text-base box-border caret-transparent mb-[15px]">
-                                        Herzliche Einladung!{" "}
+                                        Herzliche Einladung!{' '}
                                         <a
                                             href="https://etwah.de/post/details/980"
                                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -206,17 +207,17 @@ export const EventsList = () => {
                                                 href="https://etwah.de/post/details/983"
                                                 className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                             >
-                                                Fr., 31.10.2025, 19 Uhr Rosenkranzgebet in der Herz Jesu
-                                                Kirche in Altharen
+                                                Fr., 31.10.2025, 19 Uhr Rosenkranzgebet in der Herz
+                                                Jesu Kirche in Altharen
                                             </a>
                                         </h2>
                                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                      <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                      24.10.2025, Altharen{" "}
-                    </span>
+                                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                            24.10.2025, Altharen{' '}
+                                        </span>
                                     </div>
                                     <p className="text-base box-border caret-transparent mb-[15px]">
-                                        Herzliche Einladung!{" "}
+                                        Herzliche Einladung!{' '}
                                         <a
                                             href="https://etwah.de/post/details/983"
                                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -252,12 +253,12 @@ export const EventsList = () => {
                                             </a>
                                         </h2>
                                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                      <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                      28.08.2025, ETWAH{" "}
-                    </span>
+                                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                            28.08.2025, ETWAH{' '}
+                                        </span>
                                     </div>
                                     <p className="text-base box-border caret-transparent mb-[15px]">
-                                        Herzliche Einladung!{" "}
+                                        Herzliche Einladung!{' '}
                                         <a
                                             href="https://etwah.de/post/details/928"
                                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -289,16 +290,17 @@ export const EventsList = () => {
                                                 href="https://etwah.de/post/details/945"
                                                 className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                             >
-                                                So., 02.11.2025, 17 Uhr hl. Messe in polnischer Sprache
+                                                So., 02.11.2025, 17 Uhr hl. Messe in polnischer
+                                                Sprache
                                             </a>
                                         </h2>
                                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                      <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                      11.09.2025, ETWAH{" "}
-                    </span>
+                                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                            11.09.2025, ETWAH{' '}
+                                        </span>
                                     </div>
                                     <p className="text-base box-border caret-transparent mb-[15px]">
-                                        Herzlich willkommen!{" "}
+                                        Herzlich willkommen!{' '}
                                         <a
                                             href="https://etwah.de/post/details/945"
                                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -335,16 +337,16 @@ export const EventsList = () => {
                                             </a>
                                         </h2>
                                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                      <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                      28.08.2025, Haren{" "}
-                    </span>
+                                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                            28.08.2025, Haren{' '}
+                                        </span>
                                     </div>
                                     <p className="text-base box-border caret-transparent mb-[15px]">
                                         Wer hat Lust beim 1. Harener Krippenweg mitzumachen? Zum
                                         Abschluss des Heiligen Jahres 2025 möchten wir vom PGR Haren
                                         gemeinsam mit euch einen besonderen Weg gestalten – den 1.
                                         Harener Krippenweg vom 1. Adventssontag 30.11.2025 bis
-                                        Dreikönig 6.1.2026. Stelle eine Außenkrippe{" "}
+                                        Dreikönig 6.1.2026. Stelle eine Außenkrippe{' '}
                                         <a
                                             href="https://etwah.de/post/details/926"
                                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -411,5 +413,5 @@ export const EventsList = () => {
                 </section>
             </div>
         </div>
-    );
-};
+    )
+}

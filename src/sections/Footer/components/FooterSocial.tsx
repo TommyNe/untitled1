@@ -8,5 +8,5 @@ export const FooterSocial = () => {
                 <span className="box-border caret-transparent">Loading...</span>
             </ul>
         </div>
-    );
-};
+    )
+}

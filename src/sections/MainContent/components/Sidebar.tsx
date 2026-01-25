@@ -1,5 +1,5 @@
-import { SearchForm } from "@/components/SearchForm";
-import { InfoSection } from "@/sections/MainContent/components/InfoSection";
+import { SearchForm } from '@/components/SearchForm'
+import { InfoSection } from '@/sections/MainContent/components/InfoSection'
 
 export const Sidebar = () => {
     return (
@@ -7,5 +7,5 @@ export const Sidebar = () => {
             <SearchForm />
             <InfoSection />
         </div>
-    );
-};
+    )
+}

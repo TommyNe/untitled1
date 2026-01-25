@@ -5,5 +5,5 @@ export const DonationSection = () => {
                 Spenden
             </h3>
         </header>
-    );
-};
+    )
+}

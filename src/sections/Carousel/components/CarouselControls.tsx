@@ -1,7 +1,7 @@
 type Props = {
-    onPrev: () => void;
-    onNext: () => void;
-};
+    onPrev: () => void
+    onNext: () => void
+}
 
 export const CarouselControls = ({ onPrev, onNext }: Props) => {
     return (
@@ -23,5 +23,5 @@ export const CarouselControls = ({ onPrev, onNext }: Props) => {
                 ›
             </button>
         </div>
-    );
-};
+    )
+}

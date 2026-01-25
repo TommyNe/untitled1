@@ -161,7 +161,7 @@ export const InfoSection = () => {
                                 <br className="box-border caret-transparent" />
                                 Das vom italienischen Künstler Giacomo Travisani entworfene
                                 Jubiläumslogo zeigt vier Figuren, die die GESAMTE Menschheit
-                                repräsentieren aus den{" "}
+                                repräsentieren aus den{' '}
                                 <em className="italic box-border caret-transparent">vier</em>
                                 Ecken der Erde. Sie umarmen sich, um ihre Solidarität und
                                 Brüderlichkeit zu zeigen, die alle Völker vereinen sollten. Die
@@ -194,5 +194,5 @@ export const InfoSection = () => {
                 </ul>
             </section>
         </div>
-    );
-};
+    )
+}

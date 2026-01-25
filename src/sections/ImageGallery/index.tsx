@@ -53,5 +53,5 @@ export const ImageGallery = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}

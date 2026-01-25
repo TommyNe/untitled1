@@ -1,6 +1,6 @@
-import { FooterAbout } from "@/sections/Footer/components/FooterAbout";
-import { FooterLinks } from "@/sections/Footer/components/FooterLinks";
-import { FooterSocial } from "@/sections/Footer/components/FooterSocial";
+import { FooterAbout } from '@/sections/Footer/components/FooterAbout'
+import { FooterLinks } from '@/sections/Footer/components/FooterLinks'
+import { FooterSocial } from '@/sections/Footer/components/FooterSocial'
 
 export const Footer = () => {
     return (
@@ -13,5 +13,5 @@ export const Footer = () => {
                 </div>
             </div>
         </footer>
-    );
-};
+    )
+}

@@ -11,14 +11,12 @@ export const FooterAbout = () => {
             />
             <div className="box-border caret-transparent clear-both h-5 w-full"></div>
             <p className="text-base box-border caret-transparent mb-[15px]">
-                Zu unserer Pfarreiengemeinschaft &quot;ETWAH&quot; gehören fünf
-                Kirchengemeinden mit fünf Kirchen (Herz Jesu in Altharen, St. Josef in
-                Emmeln, St. Martinus in Haren, St. Marien in Tinnen und St. Clemens in
-                Wesuwe) und fünf Kapellen (Kapelle auf Schloss Dankern, Kapelle in
-                Langenberg, Heilig-Geist Kapelle im Seniorenzentrum Haren, St.
-                Laurentius-Kapelle in Landegge und im Dorfgemeinschaftshaus in Wesuwe
-                Siedlung).
+                Zu unserer Pfarreiengemeinschaft &quot;ETWAH&quot; gehören fünf Kirchengemeinden mit
+                fünf Kirchen (Herz Jesu in Altharen, St. Josef in Emmeln, St. Martinus in Haren, St.
+                Marien in Tinnen und St. Clemens in Wesuwe) und fünf Kapellen (Kapelle auf Schloss
+                Dankern, Kapelle in Langenberg, Heilig-Geist Kapelle im Seniorenzentrum Haren, St.
+                Laurentius-Kapelle in Landegge und im Dorfgemeinschaftshaus in Wesuwe Siedlung).
             </p>
         </div>
-    );
-};
+    )
+}

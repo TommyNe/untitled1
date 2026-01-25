@@ -1,6 +1,6 @@
-import { EventInfo } from "@/sections/EventBanner/components/EventInfo";
-import { EventCountdown } from "@/sections/EventBanner/components/EventCountdown";
-import { EventButton } from "@/sections/EventBanner/components/EventButton";
+import { EventButton } from '@/sections/EventBanner/components/EventButton'
+import { EventCountdown } from '@/sections/EventBanner/components/EventCountdown'
+import { EventInfo } from '@/sections/EventBanner/components/EventInfo'
 
 export const EventBanner = () => {
     return (
@@ -24,5 +24,5 @@ export const EventBanner = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}

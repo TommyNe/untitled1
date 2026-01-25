@@ -52,5 +52,5 @@ export const Pagination = () => {
                 </li>
             </ul>
         </div>
-    );
-};
+    )
+}

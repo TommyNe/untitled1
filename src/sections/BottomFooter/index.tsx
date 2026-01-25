@@ -1,5 +1,5 @@
-import { Copyright } from "@/sections/BottomFooter/components/Copyright";
-import { SocialIcons } from "@/components/SocialIcons";
+import { SocialIcons } from '@/components/SocialIcons'
+import { Copyright } from '@/sections/BottomFooter/components/Copyright'
 
 export const BottomFooter = () => {
     return (
@@ -13,5 +13,5 @@ export const BottomFooter = () => {
                 </div>
             </div>
         </footer>
-    );
-};
+    )
+}

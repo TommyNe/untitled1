@@ -5,5 +5,5 @@ export const AnnouncementSection = () => {
                 Anzeige
             </h3>
         </header>
-    );
-};
+    )
+}

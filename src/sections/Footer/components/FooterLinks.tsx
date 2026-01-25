@@ -88,5 +88,5 @@ export const FooterLinks = () => {
                 </li>
             </ul>
         </div>
-    );
-};
+    )
+}

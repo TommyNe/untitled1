@@ -8,5 +8,5 @@ export const EventButton = () => {
                 Alle Events
             </a>
         </div>
-    );
-};
+    )
+}

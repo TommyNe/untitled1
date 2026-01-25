@@ -10,19 +10,24 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TeamRouteImport } from './routes/team'
+import { Route as ImpressumRouteImport } from './routes/impressum'
+import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as ArchiveRouteImport } from './routes/archive'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as FaithIndexRouteImport } from './routes/faith/index'
 import { Route as CommunitiesIndexRouteImport } from './routes/communities/index'
 import { Route as AboutIndexRouteImport } from './routes/about/index'
 import { Route as FaithNameRouteImport } from './routes/faith/$name'
+import { Route as EventsDetailsRouteImport } from './routes/events/details'
 import { Route as AboutNameRouteImport } from './routes/about/$name'
+import { Route as EventsIndexRouteImport } from './routes/events/index.'
 import { Route as FaithProjektIndexRouteImport } from './routes/faith/projekt/index'
 import { Route as CommunitiesWesuweIndexRouteImport } from './routes/communities/wesuwe/index'
 import { Route as CommunitiesTinnenIndexRouteImport } from './routes/communities/tinnen/index'
 import { Route as CommunitiesHarenIndexRouteImport } from './routes/communities/haren/index'
 import { Route as CommunitiesEmmelnIndexRouteImport } from './routes/communities/emmeln/index'
 import { Route as CommunitiesAltharenIndexRouteImport } from './routes/communities/altharen/index'
+import { Route as PostDetailsIdRouteImport } from './routes/post/details/$id'
 import { Route as FaithProjektNameRouteImport } from './routes/faith/projekt/$name'
 import { Route as CommunitiesWesuweNameRouteImport } from './routes/communities/wesuwe/$name'
 import { Route as CommunitiesTinnenNameRouteImport } from './routes/communities/tinnen/$name'
@@ -33,6 +38,16 @@ import { Route as CommunitiesAltharenNameRouteImport } from './routes/communitie
 const TeamRoute = TeamRouteImport.update({
   id: '/team',
   path: '/team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImpressumRoute = ImpressumRouteImport.update({
+  id: '/impressum',
+  path: '/impressum',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DatenschutzRoute = DatenschutzRouteImport.update({
+  id: '/datenschutz',
+  path: '/datenschutz',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ArchiveRoute = ArchiveRouteImport.update({
@@ -65,9 +80,19 @@ const FaithNameRoute = FaithNameRouteImport.update({
   path: '/faith/$name',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EventsDetailsRoute = EventsDetailsRouteImport.update({
+  id: '/events/details',
+  path: '/events/details',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutNameRoute = AboutNameRouteImport.update({
   id: '/about/$name',
   path: '/about/$name',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsIndexRoute = EventsIndexRouteImport.update({
+  id: '/events/index/',
+  path: '/events/index/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaithProjektIndexRoute = FaithProjektIndexRouteImport.update({
@@ -101,6 +126,11 @@ const CommunitiesAltharenIndexRoute =
     path: '/communities/altharen/',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PostDetailsIdRoute = PostDetailsIdRouteImport.update({
+  id: '/post/details/$id',
+  path: '/post/details/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const FaithProjektNameRoute = FaithProjektNameRouteImport.update({
   id: '/faith/projekt/$name',
   path: '/faith/projekt/$name',
@@ -135,53 +165,11 @@ const CommunitiesAltharenNameRoute = CommunitiesAltharenNameRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/archive': typeof ArchiveRoute
+  '/datenschutz': typeof DatenschutzRoute
+  '/impressum': typeof ImpressumRoute
   '/team': typeof TeamRoute
   '/about/$name': typeof AboutNameRoute
-  '/faith/$name': typeof FaithNameRoute
-  '/about': typeof AboutIndexRoute
-  '/communities': typeof CommunitiesIndexRoute
-  '/faith': typeof FaithIndexRoute
-  '/communities/altharen/$name': typeof CommunitiesAltharenNameRoute
-  '/communities/emmeln/$name': typeof CommunitiesEmmelnNameRoute
-  '/communities/haren/$name': typeof CommunitiesHarenNameRoute
-  '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
-  '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
-  '/faith/projekt/$name': typeof FaithProjektNameRoute
-  '/communities/altharen': typeof CommunitiesAltharenIndexRoute
-  '/communities/emmeln': typeof CommunitiesEmmelnIndexRoute
-  '/communities/haren': typeof CommunitiesHarenIndexRoute
-  '/communities/tinnen': typeof CommunitiesTinnenIndexRoute
-  '/communities/wesuwe': typeof CommunitiesWesuweIndexRoute
-  '/faith/projekt': typeof FaithProjektIndexRoute
-}
-export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/archive': typeof ArchiveRoute
-  '/team': typeof TeamRoute
-  '/about/$name': typeof AboutNameRoute
-  '/faith/$name': typeof FaithNameRoute
-  '/about': typeof AboutIndexRoute
-  '/communities': typeof CommunitiesIndexRoute
-  '/faith': typeof FaithIndexRoute
-  '/communities/altharen/$name': typeof CommunitiesAltharenNameRoute
-  '/communities/emmeln/$name': typeof CommunitiesEmmelnNameRoute
-  '/communities/haren/$name': typeof CommunitiesHarenNameRoute
-  '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
-  '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
-  '/faith/projekt/$name': typeof FaithProjektNameRoute
-  '/communities/altharen': typeof CommunitiesAltharenIndexRoute
-  '/communities/emmeln': typeof CommunitiesEmmelnIndexRoute
-  '/communities/haren': typeof CommunitiesHarenIndexRoute
-  '/communities/tinnen': typeof CommunitiesTinnenIndexRoute
-  '/communities/wesuwe': typeof CommunitiesWesuweIndexRoute
-  '/faith/projekt': typeof FaithProjektIndexRoute
-}
-export interface FileRoutesById {
-  __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/archive': typeof ArchiveRoute
-  '/team': typeof TeamRoute
-  '/about/$name': typeof AboutNameRoute
+  '/events/details': typeof EventsDetailsRoute
   '/faith/$name': typeof FaithNameRoute
   '/about/': typeof AboutIndexRoute
   '/communities/': typeof CommunitiesIndexRoute
@@ -192,11 +180,68 @@ export interface FileRoutesById {
   '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
   '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
   '/faith/projekt/$name': typeof FaithProjektNameRoute
+  '/post/details/$id': typeof PostDetailsIdRoute
   '/communities/altharen/': typeof CommunitiesAltharenIndexRoute
   '/communities/emmeln/': typeof CommunitiesEmmelnIndexRoute
   '/communities/haren/': typeof CommunitiesHarenIndexRoute
   '/communities/tinnen/': typeof CommunitiesTinnenIndexRoute
   '/communities/wesuwe/': typeof CommunitiesWesuweIndexRoute
+  '/events/index/': typeof EventsIndexRoute
+  '/faith/projekt/': typeof FaithProjektIndexRoute
+}
+export interface FileRoutesByTo {
+  '/': typeof IndexRoute
+  '/archive': typeof ArchiveRoute
+  '/datenschutz': typeof DatenschutzRoute
+  '/impressum': typeof ImpressumRoute
+  '/team': typeof TeamRoute
+  '/about/$name': typeof AboutNameRoute
+  '/events/details': typeof EventsDetailsRoute
+  '/faith/$name': typeof FaithNameRoute
+  '/about': typeof AboutIndexRoute
+  '/communities': typeof CommunitiesIndexRoute
+  '/faith': typeof FaithIndexRoute
+  '/communities/altharen/$name': typeof CommunitiesAltharenNameRoute
+  '/communities/emmeln/$name': typeof CommunitiesEmmelnNameRoute
+  '/communities/haren/$name': typeof CommunitiesHarenNameRoute
+  '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
+  '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
+  '/faith/projekt/$name': typeof FaithProjektNameRoute
+  '/post/details/$id': typeof PostDetailsIdRoute
+  '/communities/altharen': typeof CommunitiesAltharenIndexRoute
+  '/communities/emmeln': typeof CommunitiesEmmelnIndexRoute
+  '/communities/haren': typeof CommunitiesHarenIndexRoute
+  '/communities/tinnen': typeof CommunitiesTinnenIndexRoute
+  '/communities/wesuwe': typeof CommunitiesWesuweIndexRoute
+  '/events/index': typeof EventsIndexRoute
+  '/faith/projekt': typeof FaithProjektIndexRoute
+}
+export interface FileRoutesById {
+  __root__: typeof rootRouteImport
+  '/': typeof IndexRoute
+  '/archive': typeof ArchiveRoute
+  '/datenschutz': typeof DatenschutzRoute
+  '/impressum': typeof ImpressumRoute
+  '/team': typeof TeamRoute
+  '/about/$name': typeof AboutNameRoute
+  '/events/details': typeof EventsDetailsRoute
+  '/faith/$name': typeof FaithNameRoute
+  '/about/': typeof AboutIndexRoute
+  '/communities/': typeof CommunitiesIndexRoute
+  '/faith/': typeof FaithIndexRoute
+  '/communities/altharen/$name': typeof CommunitiesAltharenNameRoute
+  '/communities/emmeln/$name': typeof CommunitiesEmmelnNameRoute
+  '/communities/haren/$name': typeof CommunitiesHarenNameRoute
+  '/communities/tinnen/$name': typeof CommunitiesTinnenNameRoute
+  '/communities/wesuwe/$name': typeof CommunitiesWesuweNameRoute
+  '/faith/projekt/$name': typeof FaithProjektNameRoute
+  '/post/details/$id': typeof PostDetailsIdRoute
+  '/communities/altharen/': typeof CommunitiesAltharenIndexRoute
+  '/communities/emmeln/': typeof CommunitiesEmmelnIndexRoute
+  '/communities/haren/': typeof CommunitiesHarenIndexRoute
+  '/communities/tinnen/': typeof CommunitiesTinnenIndexRoute
+  '/communities/wesuwe/': typeof CommunitiesWesuweIndexRoute
+  '/events/index/': typeof EventsIndexRoute
   '/faith/projekt/': typeof FaithProjektIndexRoute
 }
 export interface FileRouteTypes {
@@ -204,52 +249,11 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/archive'
+    | '/datenschutz'
+    | '/impressum'
     | '/team'
     | '/about/$name'
-    | '/faith/$name'
-    | '/about'
-    | '/communities'
-    | '/faith'
-    | '/communities/altharen/$name'
-    | '/communities/emmeln/$name'
-    | '/communities/haren/$name'
-    | '/communities/tinnen/$name'
-    | '/communities/wesuwe/$name'
-    | '/faith/projekt/$name'
-    | '/communities/altharen'
-    | '/communities/emmeln'
-    | '/communities/haren'
-    | '/communities/tinnen'
-    | '/communities/wesuwe'
-    | '/faith/projekt'
-  fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/archive'
-    | '/team'
-    | '/about/$name'
-    | '/faith/$name'
-    | '/about'
-    | '/communities'
-    | '/faith'
-    | '/communities/altharen/$name'
-    | '/communities/emmeln/$name'
-    | '/communities/haren/$name'
-    | '/communities/tinnen/$name'
-    | '/communities/wesuwe/$name'
-    | '/faith/projekt/$name'
-    | '/communities/altharen'
-    | '/communities/emmeln'
-    | '/communities/haren'
-    | '/communities/tinnen'
-    | '/communities/wesuwe'
-    | '/faith/projekt'
-  id:
-    | '__root__'
-    | '/'
-    | '/archive'
-    | '/team'
-    | '/about/$name'
+    | '/events/details'
     | '/faith/$name'
     | '/about/'
     | '/communities/'
@@ -260,19 +264,78 @@ export interface FileRouteTypes {
     | '/communities/tinnen/$name'
     | '/communities/wesuwe/$name'
     | '/faith/projekt/$name'
+    | '/post/details/$id'
     | '/communities/altharen/'
     | '/communities/emmeln/'
     | '/communities/haren/'
     | '/communities/tinnen/'
     | '/communities/wesuwe/'
+    | '/events/index/'
+    | '/faith/projekt/'
+  fileRoutesByTo: FileRoutesByTo
+  to:
+    | '/'
+    | '/archive'
+    | '/datenschutz'
+    | '/impressum'
+    | '/team'
+    | '/about/$name'
+    | '/events/details'
+    | '/faith/$name'
+    | '/about'
+    | '/communities'
+    | '/faith'
+    | '/communities/altharen/$name'
+    | '/communities/emmeln/$name'
+    | '/communities/haren/$name'
+    | '/communities/tinnen/$name'
+    | '/communities/wesuwe/$name'
+    | '/faith/projekt/$name'
+    | '/post/details/$id'
+    | '/communities/altharen'
+    | '/communities/emmeln'
+    | '/communities/haren'
+    | '/communities/tinnen'
+    | '/communities/wesuwe'
+    | '/events/index'
+    | '/faith/projekt'
+  id:
+    | '__root__'
+    | '/'
+    | '/archive'
+    | '/datenschutz'
+    | '/impressum'
+    | '/team'
+    | '/about/$name'
+    | '/events/details'
+    | '/faith/$name'
+    | '/about/'
+    | '/communities/'
+    | '/faith/'
+    | '/communities/altharen/$name'
+    | '/communities/emmeln/$name'
+    | '/communities/haren/$name'
+    | '/communities/tinnen/$name'
+    | '/communities/wesuwe/$name'
+    | '/faith/projekt/$name'
+    | '/post/details/$id'
+    | '/communities/altharen/'
+    | '/communities/emmeln/'
+    | '/communities/haren/'
+    | '/communities/tinnen/'
+    | '/communities/wesuwe/'
+    | '/events/index/'
     | '/faith/projekt/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ArchiveRoute: typeof ArchiveRoute
+  DatenschutzRoute: typeof DatenschutzRoute
+  ImpressumRoute: typeof ImpressumRoute
   TeamRoute: typeof TeamRoute
   AboutNameRoute: typeof AboutNameRoute
+  EventsDetailsRoute: typeof EventsDetailsRoute
   FaithNameRoute: typeof FaithNameRoute
   AboutIndexRoute: typeof AboutIndexRoute
   CommunitiesIndexRoute: typeof CommunitiesIndexRoute
@@ -283,11 +346,13 @@ export interface RootRouteChildren {
   CommunitiesTinnenNameRoute: typeof CommunitiesTinnenNameRoute
   CommunitiesWesuweNameRoute: typeof CommunitiesWesuweNameRoute
   FaithProjektNameRoute: typeof FaithProjektNameRoute
+  PostDetailsIdRoute: typeof PostDetailsIdRoute
   CommunitiesAltharenIndexRoute: typeof CommunitiesAltharenIndexRoute
   CommunitiesEmmelnIndexRoute: typeof CommunitiesEmmelnIndexRoute
   CommunitiesHarenIndexRoute: typeof CommunitiesHarenIndexRoute
   CommunitiesTinnenIndexRoute: typeof CommunitiesTinnenIndexRoute
   CommunitiesWesuweIndexRoute: typeof CommunitiesWesuweIndexRoute
+  EventsIndexRoute: typeof EventsIndexRoute
   FaithProjektIndexRoute: typeof FaithProjektIndexRoute
 }
 
@@ -298,6 +363,20 @@ declare module '@tanstack/react-router' {
       path: '/team'
       fullPath: '/team'
       preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/impressum': {
+      id: '/impressum'
+      path: '/impressum'
+      fullPath: '/impressum'
+      preLoaderRoute: typeof ImpressumRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/datenschutz': {
+      id: '/datenschutz'
+      path: '/datenschutz'
+      fullPath: '/datenschutz'
+      preLoaderRoute: typeof DatenschutzRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/archive': {
@@ -317,21 +396,21 @@ declare module '@tanstack/react-router' {
     '/faith/': {
       id: '/faith/'
       path: '/faith'
-      fullPath: '/faith'
+      fullPath: '/faith/'
       preLoaderRoute: typeof FaithIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/communities/': {
       id: '/communities/'
       path: '/communities'
-      fullPath: '/communities'
+      fullPath: '/communities/'
       preLoaderRoute: typeof CommunitiesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about/': {
       id: '/about/'
       path: '/about'
-      fullPath: '/about'
+      fullPath: '/about/'
       preLoaderRoute: typeof AboutIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
@@ -342,6 +421,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaithNameRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/events/details': {
+      id: '/events/details'
+      path: '/events/details'
+      fullPath: '/events/details'
+      preLoaderRoute: typeof EventsDetailsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about/$name': {
       id: '/about/$name'
       path: '/about/$name'
@@ -349,46 +435,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutNameRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/events/index/': {
+      id: '/events/index/'
+      path: '/events/index'
+      fullPath: '/events/index/'
+      preLoaderRoute: typeof EventsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/faith/projekt/': {
       id: '/faith/projekt/'
       path: '/faith/projekt'
-      fullPath: '/faith/projekt'
+      fullPath: '/faith/projekt/'
       preLoaderRoute: typeof FaithProjektIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/communities/wesuwe/': {
       id: '/communities/wesuwe/'
       path: '/communities/wesuwe'
-      fullPath: '/communities/wesuwe'
+      fullPath: '/communities/wesuwe/'
       preLoaderRoute: typeof CommunitiesWesuweIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/communities/tinnen/': {
       id: '/communities/tinnen/'
       path: '/communities/tinnen'
-      fullPath: '/communities/tinnen'
+      fullPath: '/communities/tinnen/'
       preLoaderRoute: typeof CommunitiesTinnenIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/communities/haren/': {
       id: '/communities/haren/'
       path: '/communities/haren'
-      fullPath: '/communities/haren'
+      fullPath: '/communities/haren/'
       preLoaderRoute: typeof CommunitiesHarenIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/communities/emmeln/': {
       id: '/communities/emmeln/'
       path: '/communities/emmeln'
-      fullPath: '/communities/emmeln'
+      fullPath: '/communities/emmeln/'
       preLoaderRoute: typeof CommunitiesEmmelnIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/communities/altharen/': {
       id: '/communities/altharen/'
       path: '/communities/altharen'
-      fullPath: '/communities/altharen'
+      fullPath: '/communities/altharen/'
       preLoaderRoute: typeof CommunitiesAltharenIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/post/details/$id': {
+      id: '/post/details/$id'
+      path: '/post/details/$id'
+      fullPath: '/post/details/$id'
+      preLoaderRoute: typeof PostDetailsIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/faith/projekt/$name': {
@@ -439,8 +539,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchiveRoute: ArchiveRoute,
+  DatenschutzRoute: DatenschutzRoute,
+  ImpressumRoute: ImpressumRoute,
   TeamRoute: TeamRoute,
   AboutNameRoute: AboutNameRoute,
+  EventsDetailsRoute: EventsDetailsRoute,
   FaithNameRoute: FaithNameRoute,
   AboutIndexRoute: AboutIndexRoute,
   CommunitiesIndexRoute: CommunitiesIndexRoute,
@@ -451,11 +554,13 @@ const rootRouteChildren: RootRouteChildren = {
   CommunitiesTinnenNameRoute: CommunitiesTinnenNameRoute,
   CommunitiesWesuweNameRoute: CommunitiesWesuweNameRoute,
   FaithProjektNameRoute: FaithProjektNameRoute,
+  PostDetailsIdRoute: PostDetailsIdRoute,
   CommunitiesAltharenIndexRoute: CommunitiesAltharenIndexRoute,
   CommunitiesEmmelnIndexRoute: CommunitiesEmmelnIndexRoute,
   CommunitiesHarenIndexRoute: CommunitiesHarenIndexRoute,
   CommunitiesTinnenIndexRoute: CommunitiesTinnenIndexRoute,
   CommunitiesWesuweIndexRoute: CommunitiesWesuweIndexRoute,
+  EventsIndexRoute: EventsIndexRoute,
   FaithProjektIndexRoute: FaithProjektIndexRoute,
 }
 export const routeTree = rootRouteImport

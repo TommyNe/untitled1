@@ -1,4 +1,4 @@
-import { QuickLinkCard } from "@/sections/QuickLinks/components/QuickLinkCard";
+import { QuickLinkCard } from '@/sections/QuickLinks/components/QuickLinkCard'
 
 export const QuickLinks = () => {
     return (
@@ -41,12 +41,12 @@ export const QuickLinks = () => {
                                 <ul className="box-border caret-transparent list-none pl-0">
                                     <li className="items-center border-b-stone-200 border-l-stone-500 border-r-stone-500 border-t-stone-500 box-border caret-transparent flex w-full py-2.5 border-b">
                                         <div className="text-zinc-800 box-border caret-transparent text-center uppercase w-[10%] mr-[4%] pt-[5px] font-roboto_condensed md:w-[6%]">
-                      <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
-                        31
-                      </span>
+                                            <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
+                                                31
+                                            </span>
                                             <span className="text-neutral-400 text-xs font-bold box-border caret-transparent block tracking-[2px] mt-1">
-                        Okt
-                      </span>
+                                                Okt
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent w-[57%] mr-[3%] md:w-[70%]">
                                             <h4 className="text-zinc-800 text-base box-border caret-transparent leading-6 font-roboto">
@@ -54,12 +54,13 @@ export const QuickLinks = () => {
                                                     href="https://etwah.de/event/detail/472"
                                                     className="text-teal-700 box-border caret-transparent"
                                                 >
-                                                    Gräbersegnung auf dem Friedhof für St. Martinus Haren
+                                                    Gräbersegnung auf dem Friedhof für St. Martinus
+                                                    Haren
                                                 </a>
                                             </h4>
                                             <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                        Freitag | 16:00 Uhr
-                      </span>
+                                                Freitag | 16:00 Uhr
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent text-right w-[26%] md:w-[17%]">
                                             <div className="box-border caret-transparent">
@@ -74,12 +75,12 @@ export const QuickLinks = () => {
                                     </li>
                                     <li className="items-center border-b-stone-200 border-l-stone-500 border-r-stone-500 border-t-stone-500 box-border caret-transparent flex w-full py-2.5 border-b">
                                         <div className="text-zinc-800 box-border caret-transparent text-center uppercase w-[10%] mr-[4%] pt-[5px] font-roboto_condensed md:w-[6%]">
-                      <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
-                        31
-                      </span>
+                                            <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
+                                                31
+                                            </span>
                                             <span className="text-neutral-400 text-xs font-bold box-border caret-transparent block tracking-[2px] mt-1">
-                        Okt
-                      </span>
+                                                Okt
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent w-[57%] mr-[3%] md:w-[70%]">
                                             <h4 className="text-zinc-800 text-base box-border caret-transparent leading-6 font-roboto">
@@ -92,8 +93,8 @@ export const QuickLinks = () => {
                                                 </a>
                                             </h4>
                                             <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                        Freitag | 16:00 Uhr
-                      </span>
+                                                Freitag | 16:00 Uhr
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent text-right w-[26%] md:w-[17%]">
                                             <div className="box-border caret-transparent">
@@ -108,12 +109,12 @@ export const QuickLinks = () => {
                                     </li>
                                     <li className="items-center border-b-stone-200 border-l-stone-500 border-r-stone-500 border-t-stone-500 box-border caret-transparent flex w-full py-2.5 border-b">
                                         <div className="text-zinc-800 box-border caret-transparent text-center uppercase w-[10%] mr-[4%] pt-[5px] font-roboto_condensed md:w-[6%]">
-                      <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
-                        01
-                      </span>
+                                            <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
+                                                01
+                                            </span>
                                             <span className="text-neutral-400 text-xs font-bold box-border caret-transparent block tracking-[2px] mt-1">
-                        Nov
-                      </span>
+                                                Nov
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent w-[57%] mr-[3%] md:w-[70%]">
                                             <h4 className="text-zinc-800 text-base box-border caret-transparent leading-6 font-roboto">
@@ -121,12 +122,13 @@ export const QuickLinks = () => {
                                                     href="https://etwah.de/event/detail/474"
                                                     className="text-teal-700 box-border caret-transparent"
                                                 >
-                                                    Gräbersegnung auf dem Friedhof für St. Josef Emmeln
+                                                    Gräbersegnung auf dem Friedhof für St. Josef
+                                                    Emmeln
                                                 </a>
                                             </h4>
                                             <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                        Samstag | 16:00 Uhr
-                      </span>
+                                                Samstag | 16:00 Uhr
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent text-right w-[26%] md:w-[17%]">
                                             <div className="box-border caret-transparent">
@@ -141,12 +143,12 @@ export const QuickLinks = () => {
                                     </li>
                                     <li className="items-center border-b-stone-200 border-l-stone-500 border-r-stone-500 border-t-stone-500 box-border caret-transparent flex w-full py-2.5 border-b">
                                         <div className="text-zinc-800 box-border caret-transparent text-center uppercase w-[10%] mr-[4%] pt-[5px] font-roboto_condensed md:w-[6%]">
-                      <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
-                        01
-                      </span>
+                                            <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
+                                                01
+                                            </span>
                                             <span className="text-neutral-400 text-xs font-bold box-border caret-transparent block tracking-[2px] mt-1">
-                        Nov
-                      </span>
+                                                Nov
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent w-[57%] mr-[3%] md:w-[70%]">
                                             <h4 className="text-zinc-800 text-base box-border caret-transparent leading-6 font-roboto">
@@ -154,12 +156,13 @@ export const QuickLinks = () => {
                                                     href="https://etwah.de/event/detail/475"
                                                     className="text-teal-700 box-border caret-transparent"
                                                 >
-                                                    Gräbersegnung auf dem Friedhof für St. Clemens Wesuwe
+                                                    Gräbersegnung auf dem Friedhof für St. Clemens
+                                                    Wesuwe
                                                 </a>
                                             </h4>
                                             <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                        Samstag | 16:00 Uhr
-                      </span>
+                                                Samstag | 16:00 Uhr
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent text-right w-[26%] md:w-[17%]">
                                             <div className="box-border caret-transparent">
@@ -174,12 +177,12 @@ export const QuickLinks = () => {
                                     </li>
                                     <li className="items-center border-b-stone-200 border-l-stone-500 border-r-stone-500 border-t-stone-500 box-border caret-transparent flex w-full py-2.5 border-b">
                                         <div className="text-zinc-800 box-border caret-transparent text-center uppercase w-[10%] mr-[4%] pt-[5px] font-roboto_condensed md:w-[6%]">
-                      <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
-                        02
-                      </span>
+                                            <span className="text-[34px] font-bold box-border caret-transparent block mt-0.5">
+                                                02
+                                            </span>
                                             <span className="text-neutral-400 text-xs font-bold box-border caret-transparent block tracking-[2px] mt-1">
-                        Nov
-                      </span>
+                                                Nov
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent w-[57%] mr-[3%] md:w-[70%]">
                                             <h4 className="text-zinc-800 text-base box-border caret-transparent leading-6 font-roboto">
@@ -187,13 +190,13 @@ export const QuickLinks = () => {
                                                     href="https://etwah.de/event/detail/476"
                                                     className="text-teal-700 box-border caret-transparent"
                                                 >
-                                                    Gräbersegnung auf dem neuen Friedhof für Herz Jesu
-                                                    Altharen
+                                                    Gräbersegnung auf dem neuen Friedhof für Herz
+                                                    Jesu Altharen
                                                 </a>
                                             </h4>
                                             <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                        Sonntag | 15:00 Uhr
-                      </span>
+                                                Sonntag | 15:00 Uhr
+                                            </span>
                                         </div>
                                         <div className="box-border caret-transparent text-right w-[26%] md:w-[17%]">
                                             <div className="box-border caret-transparent">
@@ -239,17 +242,17 @@ export const QuickLinks = () => {
                                                             href="https://etwah.de/post/details/932"
                                                             className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                                         >
-                                                            Mi., 29.10.2025, 9 Uhr Rosenkranzgebet St, Marien
-                                                            in Tinnen
+                                                            Mi., 29.10.2025, 9 Uhr Rosenkranzgebet
+                                                            St, Marien in Tinnen
                                                         </a>
                                                     </h2>
                                                     <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                            30.08.2025, Tinnen{" "}
-                          </span>
+                                                        <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                                        30.08.2025, Tinnen{' '}
+                                                    </span>
                                                 </div>
                                                 <p className="text-base box-border caret-transparent mb-[15px]">
-                                                    Herzliche Einladung!{" "}
+                                                    Herzliche Einladung!{' '}
                                                     <a
                                                         href="https://etwah.de/post/details/932"
                                                         className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -281,18 +284,19 @@ export const QuickLinks = () => {
                                                             href="https://etwah.de/post/details/965"
                                                             className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                                         >
-                                                            Do., 30.10.2025, Anmeldeschluss für den Senioren -
-                                                            Spielenachmittag am Do., 06.11.2025 organisiert
-                                                            vom Kolping Emmeln
+                                                            Do., 30.10.2025, Anmeldeschluss für den
+                                                            Senioren - Spielenachmittag am Do.,
+                                                            06.11.2025 organisiert vom Kolping
+                                                            Emmeln
                                                         </a>
                                                     </h2>
                                                     <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                            01.10.2025, Emmeln{" "}
-                          </span>
+                                                        <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                                        01.10.2025, Emmeln{' '}
+                                                    </span>
                                                 </div>
                                                 <p className="text-base box-border caret-transparent mb-[15px]">
-                                                    Herzliche Einladung! Weitere Hinweise im Post!{" "}
+                                                    Herzliche Einladung! Weitere Hinweise im Post!{' '}
                                                     <a
                                                         href="https://etwah.de/post/details/965"
                                                         className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -324,18 +328,18 @@ export const QuickLinks = () => {
                                                             href="https://etwah.de/post/details/980"
                                                             className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                                         >
-                                                            Fr., 31.10.2025, 16 Uhr Laternenlaufen in Landegge
-                                                            - AN DER BAUMBANK SANDE BZW. AN DEN VERABREDETEN
-                                                            TREFFPUNKTEN
+                                                            Fr., 31.10.2025, 16 Uhr Laternenlaufen
+                                                            in Landegge - AN DER BAUMBANK SANDE BZW.
+                                                            AN DEN VERABREDETEN TREFFPUNKTEN
                                                         </a>
                                                     </h2>
                                                     <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                            21.10.2025, Haren{" "}
-                          </span>
+                                                        <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                                        21.10.2025, Haren{' '}
+                                                    </span>
                                                 </div>
                                                 <p className="text-base box-border caret-transparent mb-[15px]">
-                                                    Herzliche Einladung!{" "}
+                                                    Herzliche Einladung!{' '}
                                                     <a
                                                         href="https://etwah.de/post/details/980"
                                                         className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -367,17 +371,17 @@ export const QuickLinks = () => {
                                                             href="https://etwah.de/post/details/983"
                                                             className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                                         >
-                                                            Fr., 31.10.2025, 19 Uhr Rosenkranzgebet in der
-                                                            Herz Jesu Kirche in Altharen
+                                                            Fr., 31.10.2025, 19 Uhr Rosenkranzgebet
+                                                            in der Herz Jesu Kirche in Altharen
                                                         </a>
                                                     </h2>
                                                     <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                            24.10.2025, Altharen{" "}
-                          </span>
+                                                        <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                                        24.10.2025, Altharen{' '}
+                                                    </span>
                                                 </div>
                                                 <p className="text-base box-border caret-transparent mb-[15px]">
-                                                    Herzliche Einladung!{" "}
+                                                    Herzliche Einladung!{' '}
                                                     <a
                                                         href="https://etwah.de/post/details/983"
                                                         className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -409,16 +413,17 @@ export const QuickLinks = () => {
                                                             href="https://etwah.de/post/details/928"
                                                             className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                                         >
-                                                            Gräbersegnung zu Allerheiligen Allerseelen
+                                                            Gräbersegnung zu Allerheiligen
+                                                            Allerseelen
                                                         </a>
                                                     </h2>
                                                     <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                            28.08.2025, ETWAH{" "}
-                          </span>
+                                                        <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                                        28.08.2025, ETWAH{' '}
+                                                    </span>
                                                 </div>
                                                 <p className="text-base box-border caret-transparent mb-[15px]">
-                                                    Herzliche Einladung!{" "}
+                                                    Herzliche Einladung!{' '}
                                                     <a
                                                         href="https://etwah.de/post/details/928"
                                                         className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -450,17 +455,17 @@ export const QuickLinks = () => {
                                                             href="https://etwah.de/post/details/945"
                                                             className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                                         >
-                                                            So., 02.11.2025, 17 Uhr hl. Messe in polnischer
-                                                            Sprache
+                                                            So., 02.11.2025, 17 Uhr hl. Messe in
+                                                            polnischer Sprache
                                                         </a>
                                                     </h2>
                                                     <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                            11.09.2025, ETWAH{" "}
-                          </span>
+                                                        <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                                        11.09.2025, ETWAH{' '}
+                                                    </span>
                                                 </div>
                                                 <p className="text-base box-border caret-transparent mb-[15px]">
-                                                    Herzlich willkommen!{" "}
+                                                    Herzlich willkommen!{' '}
                                                     <a
                                                         href="https://etwah.de/post/details/945"
                                                         className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -492,22 +497,23 @@ export const QuickLinks = () => {
                                                             href="https://etwah.de/post/details/926"
                                                             className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                                         >
-                                                            Mo., 03.11.2025, 19 Uhr Besprechung zum 1. Harener
-                                                            Krippenweg im BDH in Haren.
+                                                            Mo., 03.11.2025, 19 Uhr Besprechung zum
+                                                            1. Harener Krippenweg im BDH in Haren.
                                                         </a>
                                                     </h2>
                                                     <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                            28.08.2025, Haren{" "}
-                          </span>
+                                                        <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                                        28.08.2025, Haren{' '}
+                                                    </span>
                                                 </div>
                                                 <p className="text-base box-border caret-transparent mb-[15px]">
-                                                    Wer hat Lust beim 1. Harener Krippenweg mitzumachen?
-                                                    Zum Abschluss des Heiligen Jahres 2025 möchten wir vom
-                                                    PGR Haren gemeinsam mit euch einen besonderen Weg
-                                                    gestalten – den 1. Harener Krippenweg vom 1.
-                                                    Adventssontag 30.11.2025 bis Dreikönig 6.1.2026.
-                                                    Stelle eine Außenkrippe{" "}
+                                                    Wer hat Lust beim 1. Harener Krippenweg
+                                                    mitzumachen? Zum Abschluss des Heiligen Jahres
+                                                    2025 möchten wir vom PGR Haren gemeinsam mit
+                                                    euch einen besonderen Weg gestalten – den 1.
+                                                    Harener Krippenweg vom 1. Adventssontag
+                                                    30.11.2025 bis Dreikönig 6.1.2026. Stelle eine
+                                                    Außenkrippe{' '}
                                                     <a
                                                         href="https://etwah.de/post/details/926"
                                                         className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -585,13 +591,13 @@ export const QuickLinks = () => {
                                         className="relative text-neutral-600 text-[15px] bg-clip-padding bg-gray-200 shadow-[rgba(0,0,0,0.075)_0px_1px_3px_0px_inset] box-border caret-transparent table-cell grow h-[46px] leading-[19.95px] align-middle w-full border border-stone-300 px-4 py-2.5 rounded-l-[3px] border-solid"
                                     />
                                     <span className="relative box-border caret-transparent table-cell text-nowrap align-middle w-[1%] -ml-px">
-                    <button
-                        type="submit"
-                        className="relative text-[15px] font-bold bg-transparent caret-transparent h-[46px] tracking-[1px] leading-[19.95px] opacity-65 pointer-events-none text-center uppercase text-nowrap align-middle z-[2] border border-stone-500 -ml-px px-4 py-2.5 rounded-[3px] border-solid font-roboto_condensed hover:text-zinc-800 hover:bg-gray-200 hover:border-zinc-400"
-                    >
-                      <i className="text-xl font-black box-border caret-transparent inline-block leading-[15px] text-nowrap font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-stone-500 before:text-xl before:not-italic before:normal-nums before:font-black before:tracking-[1px] before:leading-[15px] before:list-outside before:list-disc before:pointer-events-none before:text-center before:indent-[0px] before:uppercase before:text-nowrap before:visible before:border-separate before:font-font_awesome_5_free"></i>
-                    </button>
-                  </span>
+                                        <button
+                                            type="submit"
+                                            className="relative text-[15px] font-bold bg-transparent caret-transparent h-[46px] tracking-[1px] leading-[19.95px] opacity-65 pointer-events-none text-center uppercase text-nowrap align-middle z-[2] border border-stone-500 -ml-px px-4 py-2.5 rounded-[3px] border-solid font-roboto_condensed hover:text-zinc-800 hover:bg-gray-200 hover:border-zinc-400"
+                                        >
+                                            <i className="text-xl font-black box-border caret-transparent inline-block leading-[15px] text-nowrap font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-stone-500 before:text-xl before:not-italic before:normal-nums before:font-black before:tracking-[1px] before:leading-[15px] before:list-outside before:list-disc before:pointer-events-none before:text-center before:indent-[0px] before:uppercase before:text-nowrap before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </form>
@@ -609,8 +615,8 @@ export const QuickLinks = () => {
                                                 href="https://etwah.de/wastunwenn/7"
                                                 className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                             >
-                                                &gt;&gt;&gt; ...ich ausgetreten bin und wieder eintreten
-                                                möchte?
+                                                &gt;&gt;&gt; ...ich ausgetreten bin und wieder
+                                                eintreten möchte?
                                             </a>
                                         </h2>
                                         <br className="box-border caret-transparent" />
@@ -637,7 +643,8 @@ export const QuickLinks = () => {
                                                 href="https://etwah.de/wastunwenn/2"
                                                 className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                             >
-                                                &gt;&gt;&gt; ...mein Kind Erstkommunion feiern möchte?
+                                                &gt;&gt;&gt; ...mein Kind Erstkommunion feiern
+                                                möchte?
                                             </a>
                                         </h2>
                                         <br className="box-border caret-transparent" />
@@ -664,7 +671,8 @@ export const QuickLinks = () => {
                                                 href="https://etwah.de/wastunwenn/5"
                                                 className="text-zinc-600 box-border caret-transparent hover:text-teal-700 hover:border-teal-700"
                                             >
-                                                &gt;&gt;&gt; ...wir unser Ehejubiläum feiern möchten?
+                                                &gt;&gt;&gt; ...wir unser Ehejubiläum feiern
+                                                möchten?
                                             </a>
                                         </h2>
                                         <br className="box-border caret-transparent" />
@@ -759,13 +767,13 @@ export const QuickLinks = () => {
                                                 <br className="box-border caret-transparent" />
                                                 Das vom italienischen Künstler Giacomo Travisani
                                                 entworfene Jubiläumslogo zeigt vier Figuren, die die
-                                                GESAMTE Menschheit repräsentieren aus den{" "}
+                                                GESAMTE Menschheit repräsentieren aus den{' '}
                                                 <em className="italic box-border caret-transparent">
                                                     vier
                                                 </em>
-                                                Ecken der Erde. Sie umarmen sich, um ihre Solidarität
-                                                und Brüderlichkeit zu zeigen, die alle Völker vereinen
-                                                sollten. Die &quot;raue&quot; W
+                                                Ecken der Erde. Sie umarmen sich, um ihre
+                                                Solidarität und Brüderlichkeit zu zeigen, die alle
+                                                Völker vereinen sollten. Die &quot;raue&quot; W
                                                 <p className="text-base box-border caret-transparent mb-[15px]"></p>
                                             </a>
                                         </div>
@@ -798,5 +806,5 @@ export const QuickLinks = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}

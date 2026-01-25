@@ -1,5 +1,5 @@
-import { EventsList } from "@/sections/MainContent/components/EventsList";
-import { Sidebar } from "@/sections/MainContent/components/Sidebar";
+import { EventsList } from '@/sections/MainContent/components/EventsList'
+import { Sidebar } from '@/sections/MainContent/components/Sidebar'
 
 export const MainContent = () => {
     return (
@@ -22,8 +22,8 @@ export const MainContent = () => {
                                         Kirchliche Nachrichten
                                     </strong>
                                     <span className="absolute text-zinc-800 bg-white box-border caret-transparent block z-[9] pl-[30px] pr-5 py-[5px] left-2.5 bottom-[30px]">
-                    hier klicken
-                  </span>
+                                        hier klicken
+                                    </span>
                                 </a>
                             </div>
                             <div className="relative box-border caret-transparent shrink-0 max-w-full w-full mb-5 px-3 md:w-[33.3333%] md:mb-0">
@@ -40,8 +40,8 @@ export const MainContent = () => {
                                         Livestream
                                     </strong>
                                     <span className="absolute text-zinc-800 bg-white box-border caret-transparent block z-[9] pl-[30px] pr-5 py-[5px] left-2.5 bottom-[30px]">
-                    hier klicken
-                  </span>
+                                        hier klicken
+                                    </span>
                                 </a>
                             </div>
                             <div className="relative box-border caret-transparent shrink-0 max-w-full w-full mb-5 px-3 md:w-[33.3333%] md:mb-0">
@@ -58,8 +58,8 @@ export const MainContent = () => {
                                         Belegungspläne PH/BDH
                                     </strong>
                                     <span className="absolute text-zinc-800 bg-white box-border caret-transparent block z-[9] pl-[30px] pr-5 py-[5px] left-2.5 bottom-[30px]">
-                    hier klicken
-                  </span>
+                                        hier klicken
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -71,5 +71,5 @@ export const MainContent = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}

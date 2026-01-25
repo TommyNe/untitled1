@@ -1,13 +1,13 @@
 export type NewsItemProps = {
-    imageUrl: string;
-    imageLink: string;
-    title: string;
-    titleLink: string;
-    date: string;
-    location: string;
-    description: string;
-    moreLink: string;
-};
+    imageUrl: string
+    imageLink: string
+    title: string
+    titleLink: string
+    date: string
+    location: string
+    description: string
+    moreLink: string
+}
 
 export const NewsItem = (props: NewsItemProps) => {
     return (
@@ -36,12 +36,12 @@ export const NewsItem = (props: NewsItemProps) => {
                             </a>
                         </h2>
                         <span className="text-neutral-400 text-xs italic box-border caret-transparent block mb-2.5 font-volkhov">
-              <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
+                            <i className="not-italic font-black box-border caret-transparent inline-block leading-3 mr-1 font-font_awesome_5_free before:accent-auto before:box-border before:caret-transparent before:text-neutral-400 before:text-xs before:not-italic before:normal-nums before:font-black before:tracking-[normal] before:leading-3 before:list-outside before:list-none before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-font_awesome_5_free"></i>
                             {` ${props.date},  ${props.location} `}
-            </span>
+                        </span>
                     </div>
                     <p className="text-base box-border caret-transparent mb-[15px]">
-                        {props.description}{" "}
+                        {props.description}{' '}
                         <a
                             href={props.moreLink}
                             className="text-zinc-600 box-border caret-transparent underline hover:text-teal-700 hover:no-underline hover:border-teal-700"
@@ -52,5 +52,5 @@ export const NewsItem = (props: NewsItemProps) => {
                 </div>
             </div>
         </li>
-    );
-};
+    )
+}

@@ -1,5 +1,5 @@
-import { NewsItem } from "@/sections/MainContent/components/NewsItem";
-import { Pagination } from "@/components/Pagination";
+import { Pagination } from '@/components/Pagination'
+import { NewsItem } from '@/sections/MainContent/components/NewsItem'
 
 export const NewsList = () => {
     return (
@@ -85,5 +85,5 @@ export const NewsList = () => {
                 </ul>
             </section>
         </div>
-    );
-};
+    )
+}

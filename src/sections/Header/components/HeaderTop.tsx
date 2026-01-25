@@ -1,5 +1,5 @@
-import { Logo } from "@/components/Logo";
-import { TopMenu } from "@/sections/Header/components/TopMenu";
+import { Logo } from '@/components/Logo'
+import { TopMenu } from '@/sections/Header/components/TopMenu'
 
 export const HeaderTop = () => {
     return (
@@ -15,5 +15,5 @@ export const HeaderTop = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
