@@ -2,14 +2,17 @@ import { useEffect, useMemo, useState } from 'react'
 
 import { CarouselControls } from '@/sections/Carousel/components/CarouselControls'
 import { CarouselIndicators } from '@/sections/Carousel/components/CarouselIndicators'
+import {GalleryItem} from "@/types/aggregate.ts";
+import {ASSET_URLS} from "@/constands/baseUrls.ts";
 
-const SLIDES = [
-    'https://etwah.de/galerie/0bdf999489bb96b2428ae5e43fa862950cf2d98f.jpg',
-    'https://etwah.de/galerie/ee09954091e0b05d26e58273112287ed4727eb61.jpg',
-    'https://etwah.de/galerie/e954f549c0ee780bda1a02064d4a04b6591ded2a.jpg'
-]
+type Props = {
+    images?: GalleryItem[]
+}
 
-export const Carousel = () => {
+export const Carousel = ({images}: Props) => {
+
+    const SLIDES = images?.map(img => ASSET_URLS.gallery + img.image) || []
+
     const [index, setIndex] = useState(0)
     const count = SLIDES.length
 

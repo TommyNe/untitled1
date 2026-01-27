@@ -1,7 +1,11 @@
 import { EventsList } from '@/sections/MainContent/components/EventsList'
 import { Sidebar } from '@/sections/MainContent/components/Sidebar'
+import { AggregateResponse } from '@/types/aggregate'
 
-export const MainContent = () => {
+type Props = {
+    data?: AggregateResponse
+}
+export const MainContent = ({ data }: Props) => {
     return (
         <div role="main" className="box-border caret-transparent">
             <div className="box-border caret-transparent py-[50px]">
@@ -65,7 +69,7 @@ export const MainContent = () => {
                         </div>
                     </div>
                     <div className="box-border caret-transparent flex flex-wrap -mx-3">
-                        <EventsList />
+                        <EventsList data={data} />
                         <Sidebar />
                     </div>
                 </div>
