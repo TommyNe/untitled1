@@ -1,4 +1,13 @@
-export const ImageGallery = () => {
+import { ASSET_URLS } from '@/constands/baseUrls'
+import { GalleryItem } from '@/types/aggregate'
+
+type Props = {
+    images?: GalleryItem[]
+}
+
+export const ImageGallery = ({ images = [] }: Props) => {
+    const visible = images.slice(0, 3)
+
     return (
         <div className="bg-teal-700 box-border caret-transparent text-center py-[50px] md:text-start">
             <div className="box-border caret-transparent max-w-none text-center w-full mx-auto px-6 md:max-w-[1200px] md:text-start">
@@ -14,42 +23,32 @@ export const ImageGallery = () => {
                             Bilder Galerie
                         </a>
                     </div>
-                    <div className="box-border caret-transparent shrink-0 max-w-full text-center w-full px-3 md:text-start md:w-3/12">
-                        <a
-                            href="https://etwah.de/galerie/aebb41f09293d335a352e2f5f5bff417784f38a7.jpg"
-                            className="relative text-zinc-600 box-border caret-transparent block max-w-full text-center underline mb-5 md:text-start md:mb-0 hover:text-teal-700 hover:no-underline hover:border-teal-700"
-                        >
-                            <img
-                                src="https://etwah.de/galerie/aebb41f09293d335a352e2f5f5bff417784f38a7.jpg"
-                                alt="aebb41f09293d335a352e2f5f5bff417784f38a7.jpg"
-                                className="box-border caret-transparent max-w-full text-center md:text-start"
-                            />
-                        </a>
-                    </div>
-                    <div className="box-border caret-transparent shrink-0 max-w-full text-center w-full px-3 md:text-start md:w-3/12">
-                        <a
-                            href="https://etwah.de/galerie/67536a282c136523ce4d9a915044e21bdda17351.jpg"
-                            className="relative text-zinc-600 box-border caret-transparent block max-w-full text-center underline mb-5 md:text-start md:mb-0 hover:text-teal-700 hover:no-underline hover:border-teal-700"
-                        >
-                            <img
-                                src="https://etwah.de/galerie/67536a282c136523ce4d9a915044e21bdda17351.jpg"
-                                alt="67536a282c136523ce4d9a915044e21bdda17351.jpg"
-                                className="box-border caret-transparent max-w-full text-center md:text-start"
-                            />
-                        </a>
-                    </div>
-                    <div className="box-border caret-transparent shrink-0 max-w-full text-center w-full px-3 md:text-start md:w-3/12">
-                        <a
-                            href="https://etwah.de/galerie/8fb1437e1572092249226978abb78457ed2c69b7.jpg"
-                            className="relative text-zinc-600 box-border caret-transparent block max-w-full text-center underline mb-5 md:text-start md:mb-0 hover:text-teal-700 hover:no-underline hover:border-teal-700"
-                        >
-                            <img
-                                src="https://etwah.de/galerie/8fb1437e1572092249226978abb78457ed2c69b7.jpg"
-                                alt="8fb1437e1572092249226978abb78457ed2c69b7.jpg"
-                                className="box-border caret-transparent max-w-full text-center md:text-start"
-                            />
-                        </a>
-                    </div>
+                    {visible.map(item => {
+                        const href = `${ASSET_URLS.gallery}${item.image}`
+                        const alt = item?.name ?? 'Gallery Image'
+                        return (
+                            <div
+                                key={item.id}
+                                className="box-border caret-transparent shrink-0 max-w-full text-center w-full px-3 md:text-start md:w-3/12"
+                            >
+                                <a
+                                    href={href}
+                                    className="relative text-zinc-600 box-border caret-transparent block max-w-full text-center underline mb-5 md:text-start md:mb-0 hover:text-teal-700 hover:no-underline hover:border-teal-700"
+                                >
+                                    <img
+                                        src={href}
+                                        alt={alt}
+                                        className="box-border caret-transparent max-w-full text-center md:text-start"
+                                    />
+                                </a>
+                            </div>
+                        )
+                    })}
+                    {!visible.length && (
+                        <div className="box-border caret-transparent shrink-0 max-w-full text-center w-full px-3 md:text-start">
+                            <span className="text-white text-sm">Keine Bilder gefunden.</span>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

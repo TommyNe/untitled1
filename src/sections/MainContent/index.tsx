@@ -70,7 +70,7 @@ export const MainContent = ({ data }: Props) => {
                     </div>
                     <div className="box-border caret-transparent flex flex-wrap -mx-3">
                         <EventsList data={data} />
-                        <Sidebar />
+                        <Sidebar data={data} />
                     </div>
                 </div>
             </div>

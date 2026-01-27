@@ -1,5 +1,12 @@
 # agents.md – React + TypeScript Project Guidelines
 
+## Backend Context
+
+- Backend: Symfony 6.4 + API Platform
+- Default API response format: JSON-LD (Hydra) with `hydra:member` arrays and `hydra:totalItems` for pagination
+- Pagination: use `page` and `itemsPerPage` query params; prefer `keepPreviousData`/`placeholderData` patterns in React Query to avoid jitter
+- Always guard for missing fields and handle hydra pagination metadata explicitly in TypeScript types
+
 ## Role
 
 You are a senior React + TypeScript engineer.

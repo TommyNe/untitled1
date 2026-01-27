@@ -32,13 +32,12 @@ export const Route = createFileRoute('/')({
 
 function Index() {
     const { data } = useSuspenseQuery(options())
-    console.log('dfg', data.events)
     return (
         <>
             <Carousel images={data.galery} />
             <EventBanner events={data.events} />
             <MainContent data={data} />
-            <ImageGallery />
+            <ImageGallery images={data.galery} />
         </>
     )
 }
