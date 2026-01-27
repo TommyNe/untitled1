@@ -3,7 +3,7 @@ import { InfoSection } from '@/sections/MainContent/components/InfoSection'
 import { AggregateResponse } from '@/types/aggregate.ts'
 
 type Props = {
-    data?: AggregateResponse
+    data: AggregateResponse
 }
 
 export const Sidebar = ({ data }: Props) => {
